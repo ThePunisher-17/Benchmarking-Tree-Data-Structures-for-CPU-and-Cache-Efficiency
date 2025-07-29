@@ -1,0 +1,28 @@
+# started on Sun Jul  6 14:36:44 2025
+
+
+ Performance counter stats for './benchmark RB 50000 benchmark_results/csv/RB_results.csv':
+
+             13.62 msec task-clock                       #    0.967 CPUs utilized             
+                 1      context-switches                 #   73.412 /sec                      
+                 1      cpu-migrations                   #   73.412 /sec                      
+               803      page-faults                      #   58.950 K/sec                     
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+        61,909,548      cpu_core/cycles/                 #    4.545 GHz                       
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+        57,856,966      cpu_core/instructions/           #    0.93  insn per cycle            
+     <not counted>      cpu_atom/branches/                                                      (0.00%)
+        12,112,518      cpu_core/branches/               #  889.203 M/sec                     
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+           654,794      cpu_core/branch-misses/          #    5.41% of all branches           
+             TopdownL1 (cpu_core)                 #     27.3 %  tma_backend_bound      
+                                                  #     30.5 %  tma_bad_speculation    
+                                                  #     27.4 %  tma_frontend_bound     
+                                                  #     14.8 %  tma_retiring           
+
+       0.014088550 seconds time elapsed
+
+       0.011705000 seconds user
+       0.002306000 seconds sys
+
+

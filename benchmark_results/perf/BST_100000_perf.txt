@@ -1,0 +1,28 @@
+# started on Sun Jul  6 14:36:00 2025
+
+
+ Performance counter stats for './benchmark BST 100000 benchmark_results/csv/BST_results.csv':
+
+             42.43 msec task-clock                       #    0.991 CPUs utilized             
+                 1      context-switches                 #   23.569 /sec                      
+                 1      cpu-migrations                   #   23.569 /sec                      
+             1,086      page-faults                      #   25.596 K/sec                     
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+       196,348,269      cpu_core/cycles/                 #    4.628 GHz                       
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+       137,096,709      cpu_core/instructions/           #    0.70  insn per cycle            
+     <not counted>      cpu_atom/branches/                                                      (0.00%)
+        36,393,727      cpu_core/branches/               #  857.771 M/sec                     
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+         3,630,208      cpu_core/branch-misses/          #    9.97% of all branches           
+             TopdownL1 (cpu_core)                 #     15.6 %  tma_backend_bound      
+                                                  #     25.3 %  tma_bad_speculation    
+                                                  #     48.2 %  tma_frontend_bound     
+                                                  #     10.9 %  tma_retiring           
+
+       0.042810719 seconds time elapsed
+
+       0.042772000 seconds user
+       0.000000000 seconds sys
+
+

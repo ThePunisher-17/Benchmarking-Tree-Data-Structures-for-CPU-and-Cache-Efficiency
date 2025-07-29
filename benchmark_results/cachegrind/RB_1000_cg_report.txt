@@ -1,0 +1,1326 @@
+--------------------------------------------------------------------------------
+-- Metadata
+--------------------------------------------------------------------------------
+Invocation:       /usr/bin/cg_annotate cachegrind.out.13666
+Command:          ./benchmark RB 1000 benchmark_results/csv/RB_results.csv
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Threshold:        0.1%
+Annotation:       on
+
+--------------------------------------------------------------------------------
+-- Summary
+--------------------------------------------------------------------------------
+Ir________________ 
+
+2,808,972 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+-- File:function summary
+--------------------------------------------------------------------------------
+  Ir____________________  file:function
+
+< 795,772 (28.3%, 28.3%)  ./elf/./elf/dl-lookup.c:
+  497,744 (17.7%)           do_lookup_x
+  185,267  (6.6%)           _dl_lookup_symbol_x
+  112,761  (4.0%)           check_match
+
+< 492,502 (17.5%, 45.9%)  ./elf/../sysdeps/generic/dl-new-hash.h:_dl_lookup_symbol_x
+
+< 393,908 (14.0%, 59.9%)  ./malloc/./malloc/malloc.c:
+  140,401  (5.0%)           _int_malloc
+   84,468  (3.0%)           _int_free
+   55,819  (2.0%)           malloc_consolidate
+   53,095  (1.9%)           malloc
+   32,984  (1.2%)           free
+   22,125  (0.8%)           unlink_chunk.isra.0
+    4,028  (0.1%)           alloc_perturb
+
+< 245,780  (8.7%, 68.6%)  /usr/include/c++/13/bits/stl_tree.h:
+  136,324  (4.9%)           std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_get_insert_unique_pos(int const&) [clone .isra.0]
+   80,191  (2.9%)           std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::erase(int const&) [clone .isra.0]
+   25,426  (0.9%)           benchmark_tree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&)
+    3,839  (0.1%)           std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_erase(std::_Rb_tree_node<int>*) [clone .isra.0]
+
+< 170,253  (6.1%, 74.7%)  ???:
+   54,523  (1.9%)           std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+   42,425  (1.5%)           std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&)
+   19,850  (0.7%)           ???
+   15,591  (0.6%)           std::_Rb_tree_decrement(std::_Rb_tree_node_base*)
+   12,192  (0.4%)           std::locale::_Impl::_M_install_facet(std::locale::id const*, std::locale::facet const*)
+   10,620  (0.4%)           std::_Rb_tree_increment(std::_Rb_tree_node_base const*)
+
+< 146,990  (5.2%, 79.9%)  ./elf/./elf/dl-reloc.c:_dl_relocate_object
+
+< 118,533  (4.2%, 84.1%)  ./elf/../sysdeps/x86_64/dl-machine.h:
+  118,396  (4.2%)           _dl_relocate_object
+
+< 110,601  (3.9%, 88.1%)  ./elf/./elf/do-rel.h:
+  110,545  (3.9%)           _dl_relocate_object
+
+<  68,077  (2.4%, 90.5%)  ./string/../sysdeps/x86_64/multiarch/../multiarch/strcmp-sse2.S:
+   68,045  (2.4%)           strcmp
+
+<  31,565  (1.1%, 91.6%)  ./elf/./elf/dl-tunables.c:
+   30,377  (1.1%)           __GI___tunables_init
+
+<  21,635  (0.8%, 92.4%)  /home/pratik/Desktop/Details 3/main.cpp:
+   19,109  (0.7%)           benchmark_tree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&)
+
+<  19,914  (0.7%, 93.1%)  ./elf/../sysdeps/generic/ldsodefs.h:
+   10,433  (0.4%)           _dl_relocate_object
+    9,475  (0.3%)           do_lookup_x
+
+<  17,500  (0.6%, 93.7%)  /usr/include/c++/13/bits/uniform_int_dist.h:
+   15,500  (0.6%)           unsigned long std::uniform_int_distribution<unsigned long>::operator()<std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&, std::uniform_int_distribution<unsigned long>::param_type const&) [clone .isra.0]
+
+<  16,447  (0.6%, 94.3%)  ./elf/./elf/dl-version.c:
+   16,336  (0.6%)           _dl_check_map_versions
+
+<  15,132  (0.5%, 94.9%)  /usr/include/c++/13/bits/stl_function.h:std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_get_insert_unique_pos(int const&) [clone .isra.0]
+
+<   9,216  (0.3%, 95.2%)  ./wcsmbs/./wcsmbs/btowc.c:btowc
+
+<   8,669  (0.3%, 95.5%)  ./elf/./elf/dl-load.c:
+    3,856  (0.1%)           _dl_map_object_from_fd
+
+<   7,580  (0.3%, 95.8%)  ./elf/../sysdeps/generic/dl-protected.h:do_lookup_x
+
+<   7,031  (0.3%, 96.0%)  ./elf/./elf/dl-runtime.c:_dl_fixup
+
+<   7,000  (0.2%, 96.3%)  /usr/include/c++/13/bits/random.h:unsigned long std::uniform_int_distribution<unsigned long>::operator()<std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&, std::uniform_int_distribution<unsigned long>::param_type const&) [clone .isra.0]
+
+<   6,212  (0.2%, 96.5%)  ./stdlib/./stdlib/random_r.c:srandom_r
+
+<   5,621  (0.2%, 96.7%)  ./malloc/./malloc/arena.c:
+    3,534  (0.1%)           free
+
+<   5,008  (0.2%, 96.9%)  /usr/include/c++/13/bits/stl_numeric.h:main
+
+<   4,800  (0.2%, 97.0%)  ./elf/./elf/dl-cache.c:
+    3,403  (0.1%)           _dl_cache_libcmp
+
+<   4,496  (0.2%, 97.2%)  /usr/include/c++/13/bits/move.h:void std::shuffle<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&&)
+
+<   4,294  (0.2%, 97.4%)  ./elf/../sysdeps/x86/dl-cacheinfo.h:
+    3,322  (0.1%)           intel_check_word.constprop.0
+
+<   4,013  (0.1%, 97.5%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms
+
+<   3,656  (0.1%, 97.6%)  ./elf/./elf/dl-tunables.h:
+    3,631  (0.1%)           __GI___tunables_init
+
+<   3,515  (0.1%, 97.7%)  /usr/include/c++/13/bits/stl_algo.h:void std::shuffle<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&&)
+
+<   3,412  (0.1%, 97.9%)  ./elf/./elf/dl-misc.c:
+    3,208  (0.1%)           _dl_name_match_p
+
+<   3,200  (0.1%, 98.0%)  ./wcsmbs/./wcsmbs/wctob.c:wctob
+
+<   2,911  (0.1%, 98.1%)  ./elf/../sysdeps/x86_64/dl-trampoline.h:_dl_runtime_resolve_xsave
+
+--------------------------------------------------------------------------------
+-- Function:file summary
+--------------------------------------------------------------------------------
+  Ir____________________  function:file
+
+> 677,769 (24.1%, 24.1%)  _dl_lookup_symbol_x:
+  492,502 (17.5%)           ./elf/../sysdeps/generic/dl-new-hash.h
+  185,267  (6.6%)           ./elf/./elf/dl-lookup.c
+
+> 514,812 (18.3%, 42.5%)  do_lookup_x:
+  497,744 (17.7%)           ./elf/./elf/dl-lookup.c
+    9,475  (0.3%)           ./elf/../sysdeps/generic/ldsodefs.h
+    7,580  (0.3%)           ./elf/../sysdeps/generic/dl-protected.h
+
+> 386,364 (13.8%, 56.2%)  _dl_relocate_object:
+  146,990  (5.2%)           ./elf/./elf/dl-reloc.c
+  118,396  (4.2%)           ./elf/../sysdeps/x86_64/dl-machine.h
+  110,545  (3.9%)           ./elf/./elf/do-rel.h
+   10,433  (0.4%)           ./elf/../sysdeps/generic/ldsodefs.h
+
+> 151,456  (5.4%, 61.6%)  std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_get_insert_unique_pos(int const&) [clone .isra.0]:
+  136,324  (4.9%)           /usr/include/c++/13/bits/stl_tree.h
+   15,132  (0.5%)           /usr/include/c++/13/bits/stl_function.h
+
+> 140,401  (5.0%, 66.6%)  _int_malloc:./malloc/./malloc/malloc.c
+
+> 112,761  (4.0%, 70.6%)  check_match:./elf/./elf/dl-lookup.c
+
+>  84,468  (3.0%, 73.6%)  _int_free:./malloc/./malloc/malloc.c
+
+>  81,507  (2.9%, 76.5%)  std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::erase(int const&) [clone .isra.0]:
+   80,191  (2.9%)           /usr/include/c++/13/bits/stl_tree.h
+
+>  68,067  (2.4%, 78.9%)  strcmp:
+   68,045  (2.4%)           ./string/../sysdeps/x86_64/multiarch/../multiarch/strcmp-sse2.S
+
+>  55,819  (2.0%, 80.9%)  malloc_consolidate:./malloc/./malloc/malloc.c
+
+>  55,110  (2.0%, 82.9%)  malloc:
+   53,095  (1.9%)           ./malloc/./malloc/malloc.c
+
+>  54,523  (1.9%, 84.8%)  std::_Rb_tree_insert_and_rebalance(bool, std::_Rb_tree_node_base*, std::_Rb_tree_node_base*, std::_Rb_tree_node_base&):???
+
+>  47,869  (1.7%, 86.5%)  benchmark_tree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&):
+   25,426  (0.9%)           /usr/include/c++/13/bits/stl_tree.h
+   19,109  (0.7%)           /home/pratik/Desktop/Details 3/main.cpp
+
+>  42,425  (1.5%, 88.1%)  std::_Rb_tree_rebalance_for_erase(std::_Rb_tree_node_base*, std::_Rb_tree_node_base&):???
+
+>  36,518  (1.3%, 89.4%)  free:
+   32,984  (1.2%)           ./malloc/./malloc/malloc.c
+    3,534  (0.1%)           ./malloc/./malloc/arena.c
+
+>  34,008  (1.2%, 90.6%)  __GI___tunables_init:
+   30,377  (1.1%)           ./elf/./elf/dl-tunables.c
+    3,631  (0.1%)           ./elf/./elf/dl-tunables.h
+
+>  22,500  (0.8%, 91.4%)  unsigned long std::uniform_int_distribution<unsigned long>::operator()<std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&, std::uniform_int_distribution<unsigned long>::param_type const&) [clone .isra.0]:
+   15,500  (0.6%)           /usr/include/c++/13/bits/uniform_int_dist.h
+    7,000  (0.2%)           /usr/include/c++/13/bits/random.h
+
+>  22,125  (0.8%, 92.2%)  unlink_chunk.isra.0:./malloc/./malloc/malloc.c
+
+>  19,850  (0.7%, 92.9%)  ???:???
+
+>  16,390  (0.6%, 93.4%)  _dl_check_map_versions:
+   16,336  (0.6%)           ./elf/./elf/dl-version.c
+
+>  15,591  (0.6%, 94.0%)  std::_Rb_tree_decrement(std::_Rb_tree_node_base*):???
+
+>  12,514  (0.4%, 94.4%)  void std::shuffle<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&&):
+    4,496  (0.2%)           /usr/include/c++/13/bits/move.h
+    3,515  (0.1%)           /usr/include/c++/13/bits/stl_algo.h
+
+>  12,192  (0.4%, 94.9%)  std::locale::_Impl::_M_install_facet(std::locale::id const*, std::locale::facet const*):???
+
+>  10,620  (0.4%, 95.3%)  std::_Rb_tree_increment(std::_Rb_tree_node_base const*):???
+
+>   9,728  (0.3%, 95.6%)  btowc:
+    9,216  (0.3%)           ./wcsmbs/./wcsmbs/btowc.c
+
+>   7,174  (0.3%, 95.9%)  _dl_fixup:
+    7,031  (0.3%)           ./elf/./elf/dl-runtime.c
+
+>   6,597  (0.2%, 96.1%)  _dl_map_object_from_fd:
+    3,856  (0.1%)           ./elf/./elf/dl-load.c
+
+>   6,212  (0.2%, 96.3%)  srandom_r:./stdlib/./stdlib/random_r.c
+
+>   5,590  (0.2%, 96.5%)  intel_check_word.constprop.0:
+    3,322  (0.1%)           ./elf/../sysdeps/x86/dl-cacheinfo.h
+
+>   5,335  (0.2%, 96.7%)  std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_erase(std::_Rb_tree_node<int>*) [clone .isra.0]:
+    3,839  (0.1%)           /usr/include/c++/13/bits/stl_tree.h
+
+>   5,189  (0.2%, 96.9%)  main:
+    5,008  (0.2%)           /usr/include/c++/13/bits/stl_numeric.h
+
+>   4,028  (0.1%, 97.0%)  alloc_perturb:./malloc/./malloc/malloc.c
+
+>   4,013  (0.1%, 97.2%)  __memset_avx2_unaligned_erms:./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+>   3,403  (0.1%, 97.3%)  _dl_cache_libcmp:./elf/./elf/dl-cache.c
+
+>   3,208  (0.1%, 97.4%)  _dl_name_match_p:./elf/./elf/dl-misc.c
+
+>   3,200  (0.1%, 97.5%)  wctob:./wcsmbs/./wcsmbs/wctob.c
+
+>   2,911  (0.1%, 97.6%)  _dl_runtime_resolve_xsave:./elf/../sysdeps/x86_64/dl-trampoline.h
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/../sysdeps/generic/dl-new-hash.h
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/../sysdeps/generic/dl-new-hash.h
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/../sysdeps/generic/dl-protected.h
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/../sysdeps/generic/dl-protected.h
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/../sysdeps/generic/ldsodefs.h
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/../sysdeps/generic/ldsodefs.h
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/../sysdeps/x86/dl-cacheinfo.h
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/../sysdeps/x86/dl-cacheinfo.h
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/../sysdeps/x86_64/dl-machine.h
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/../sysdeps/x86_64/dl-machine.h
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/../sysdeps/x86_64/dl-trampoline.h
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/../sysdeps/x86_64/dl-trampoline.h
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/./elf/dl-cache.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/./elf/dl-cache.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/./elf/dl-load.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/./elf/dl-load.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/./elf/dl-lookup.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/./elf/dl-lookup.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/./elf/dl-misc.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/./elf/dl-misc.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/./elf/dl-reloc.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/./elf/dl-reloc.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/./elf/dl-runtime.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/./elf/dl-runtime.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/./elf/dl-tunables.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/./elf/dl-tunables.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/./elf/dl-tunables.h
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/./elf/dl-tunables.h
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/./elf/dl-version.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/./elf/dl-version.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/./elf/do-rel.h
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/./elf/do-rel.h
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./malloc/./malloc/arena.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./malloc/./malloc/arena.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./malloc/./malloc/malloc.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./malloc/./malloc/malloc.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./stdlib/./stdlib/random_r.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./stdlib/./stdlib/random_r.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./string/../sysdeps/x86_64/multiarch/../multiarch/strcmp-sse2.S
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./string/../sysdeps/x86_64/multiarch/../multiarch/strcmp-sse2.S
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./wcsmbs/./wcsmbs/btowc.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./wcsmbs/./wcsmbs/btowc.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./wcsmbs/./wcsmbs/wctob.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./wcsmbs/./wcsmbs/wctob.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: /home/pratik/Desktop/Details 3/main.cpp
+--------------------------------------------------------------------------------
+Ir__________ 
+
+-- line 15 ----------------------------------------
+    .         using namespace std;
+    .         using namespace chrono;
+    .         
+    .         // ================= Memory Profiler =================
+    .         size_t current_allocated_bytes = 0;
+    .         size_t peak_allocated_bytes = 0;
+    .         
+    .         void *operator new(std::size_t size) noexcept(false)
+    1 (0.0%)  {
+3,537 (0.1%)      current_allocated_bytes += size;
+2,356 (0.1%)      if (current_allocated_bytes > peak_allocated_bytes)
+1,181 (0.0%)          peak_allocated_bytes = current_allocated_bytes;
+4,705 (0.2%)      return malloc(size);
+    .         }
+    .         
+    .         void operator delete(void *ptr) noexcept
+1,178 (0.0%)  {
+1,178 (0.0%)      free(ptr);
+    .         }
+    .         
+    .         long get_peak_rss_kb()
+    .         {
+    .             struct rusage r;
+    3 (0.0%)      getrusage(RUSAGE_SELF, &r);
+    .             return r.ru_maxrss;
+    .         }
+    .         
+    .         void report_memory_usage(std::ostream &out = std::cout)
+    7 (0.0%)  {
+    .             out << "[Memory] Peak Allocated Bytes (C++ counters): " << peak_allocated_bytes << " bytes\n";
+    .             out << "[Memory] Peak RSS (Resident Set Size): " << get_peak_rss_kb() << " KB\n";
+    2 (0.0%)  }
+    .         
+    .         // ================= Benchmark Struct =================
+    .         struct OperationStats
+    .         {
+    .             double insert_time = 0;
+    .             double search_time = 0;
+    .             double update_time = 0;
+    .             double delete_time = 0;
+-- line 54 ----------------------------------------
+-- line 439 ----------------------------------------
+    .         {
+    .             auto it = tree.upper_bound(key);
+    .             if (it == tree.end())
+    .                 return -1;
+    .             return *it;
+    .         }
+    .         
+    .         // ==================== vEB Tree ====================
+    4 (0.0%)  vector<int> vebTree;
+    .         
+    .         void build_veb_layout(const vector<int> &sorted, int low, int high, int index)
+    .         {
+    .             if (low > high || index >= (int)vebTree.size())
+    .                 return;
+    .             int mid = (low + high) / 2;
+    .             vebTree[index] = sorted[mid];
+    .             build_veb_layout(sorted, low, mid - 1, 2 * index + 1);
+-- line 455 ----------------------------------------
+-- line 469 ----------------------------------------
+    .         }
+    .         
+    .         // ==================== Benchmark Dispatcher ====================
+    .         OperationStats benchmark_tree(const string &tree_type,
+    .                                       const vector<int> &data,
+    .                                       const vector<int> &update_data,
+    .                                       const vector<int> &delete_data,
+    .                                       const vector<int> &pred_succ_data)
+   16 (0.0%)  {
+    4 (0.0%)      OperationStats stats;
+    1 (0.0%)      auto t1 = high_resolution_clock::now(), t2 = t1;
+    .         
+    .             if (tree_type == "BST")
+    .             {
+    .                 BSTNode *root = nullptr;
+    .                 t1 = high_resolution_clock::now();
+    .                 for (int x : data)
+    .                     root = bst_insert(root, x);
+    .                 t2 = high_resolution_clock::now();
+-- line 487 ----------------------------------------
+-- line 605 ----------------------------------------
+    .                     treap_successor(root, x);
+    .                 t2 = high_resolution_clock::now();
+    .                 stats.succ_time = duration_cast<milliseconds>(t2 - t1).count();
+    .             }
+    .         
+    .             else if (tree_type == "RB")
+    .             {
+    .                 RBTree tree;
+    3 (0.0%)          t1 = high_resolution_clock::now();
+4,003 (0.1%)          for (int x : data)
+    .                     rbtree_insert(tree, x);
+    1 (0.0%)          t2 = high_resolution_clock::now();
+    3 (0.0%)          stats.insert_time = duration_cast<milliseconds>(t2 - t1).count();
+    .         
+    2 (0.0%)          t1 = high_resolution_clock::now();
+    .                 for (int x : data)
+    .                     rbtree_search(tree, x);
+    1 (0.0%)          t2 = high_resolution_clock::now();
+    3 (0.0%)          stats.search_time = duration_cast<milliseconds>(t2 - t1).count();
+    .         
+    3 (0.0%)          t1 = high_resolution_clock::now();
+2,402 (0.1%)          for (int x : update_data)
+    .                 {
+    .                     rbtree_delete(tree, x);
+  600 (0.0%)              rbtree_insert(tree, x + 1);
+    .                 }
+    1 (0.0%)          t2 = high_resolution_clock::now();
+    3 (0.0%)          stats.update_time = duration_cast<milliseconds>(t2 - t1).count();
+    .         
+    2 (0.0%)          t1 = high_resolution_clock::now();
+  303 (0.0%)          for (int x : delete_data)
+    .                     rbtree_delete(tree, x);
+    1 (0.0%)          t2 = high_resolution_clock::now();
+    3 (0.0%)          stats.delete_time = duration_cast<milliseconds>(t2 - t1).count();
+    .         
+    2 (0.0%)          t1 = high_resolution_clock::now();
+    .                 for (int x : pred_succ_data)
+    .                     rbtree_predecessor(tree, x);
+    1 (0.0%)          t2 = high_resolution_clock::now();
+    3 (0.0%)          stats.pred_time = duration_cast<milliseconds>(t2 - t1).count();
+    .         
+    2 (0.0%)          t1 = high_resolution_clock::now();
+    .                 for (int x : pred_succ_data)
+    .                     rbtree_successor(tree, x);
+    1 (0.0%)          t2 = high_resolution_clock::now();
+    3 (0.0%)          stats.succ_time = duration_cast<milliseconds>(t2 - t1).count();
+    .             }
+    .         
+    .             else if (tree_type == "vEB")
+    .             {
+    .                 vector<int> sorted = data;
+    .                 sort(sorted.begin(), sorted.end());
+    .                 vebTree.assign(sorted.size(), -1);
+    .         
+-- line 658 ----------------------------------------
+-- line 669 ----------------------------------------
+    .         
+    .                 stats.update_time = 0;
+    .                 stats.delete_time = 0;
+    .                 stats.pred_time = 0;
+    .                 stats.succ_time = 0;
+    .             }
+    .         
+    .             return stats;
+   12 (0.0%)  }
+    .         
+    .         // =========================== MAIN ===============================
+    .         int main(int argc, char **argv)
+   13 (0.0%)  {
+    2 (0.0%)      if (argc != 4)
+    .             {
+    .                 cerr << "Usage: " << argv[0] << " <TreeType> <Size> <OutputCSV>\n";
+    .                 return 1;
+    .             }
+    .         
+    6 (0.0%)      string tree_type = argv[1];
+    7 (0.0%)      int N = stoi(argv[2]);
+    6 (0.0%)      string output_file = argv[3];
+    .         
+    2 (0.0%)      srand(42);
+    .             vector<int> data(N);
+    .             iota(data.begin(), data.end(), 0);
+    4 (0.0%)      shuffle(data.begin(), data.end(), default_random_engine(42));
+    .         
+   10 (0.0%)      vector<int> update_data(data.begin(), data.begin() + N * 60 / 100);
+    9 (0.0%)      vector<int> delete_data(data.begin(), data.begin() + N * 10 / 100);
+    9 (0.0%)      vector<int> pred_succ_data(data.begin(), data.begin() + N * 5 / 100);
+    .         
+    8 (0.0%)      OperationStats stats = benchmark_tree(tree_type, data, update_data, delete_data, pred_succ_data);
+    .         
+    .             // Always run benchmarks, only suppress writing
+    4 (0.0%)      if (getenv("DISABLE_CSV_WRITE") == nullptr)
+    .             {
+    .                 ofstream out(output_file, ios::app);
+    .                 if (!out)
+    .                 {
+    .                     cerr << "Failed to open " << output_file << endl;
+    .                     return 1;
+    .                 }
+    .         
+-- line 712 ----------------------------------------
+-- line 715 ----------------------------------------
+    .         
+    .                 out << tree_type << "," << N << ","
+    .                     << stats.insert_time << "," << stats.search_time << ","
+    .                     << stats.update_time << "," << stats.delete_time << ","
+    .                     << stats.pred_time << "," << stats.succ_time << ","
+    .                     << peak_allocated_bytes << "," << get_peak_rss_kb() << "\n";
+    .             }
+    .         
+    2 (0.0%)      report_memory_usage();
+    .         
+    1 (0.0%)      return 0;
+   21 (0.0%)  }
+    .         
+
+--------------------------------------------------------------------------------
+-- Annotated source file: /usr/include/c++/13/bits/move.h
+--------------------------------------------------------------------------------
+Ir__________ 
+
+-- line 189 ----------------------------------------
+    .             swap(_Tp& __a, _Tp& __b)
+    .             _GLIBCXX_NOEXCEPT_IF(__and_<is_nothrow_move_constructible<_Tp>,
+    .         				is_nothrow_move_assignable<_Tp>>::value)
+    .             {
+    .         #if __cplusplus < 201103L
+    .               // concept requirements
+    .               __glibcxx_function_requires(_SGIAssignableConcept<_Tp>)
+    .         #endif
+1,498 (0.1%)        _Tp __tmp = _GLIBCXX_MOVE(__a);
+1,998 (0.1%)        __a = _GLIBCXX_MOVE(__b);
+1,000 (0.0%)        __b = _GLIBCXX_MOVE(__tmp);
+    .             }
+    .         
+    .           // _GLIBCXX_RESOLVE_LIB_DEFECTS
+    .           // DR 809. std::swap should be overloaded for array types.
+    .           /// Swap the contents of two arrays.
+    .           template<typename _Tp, size_t _Nm>
+    .             _GLIBCXX20_CONSTEXPR
+    .             inline
+-- line 207 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Annotated source file: /usr/include/c++/13/bits/random.h
+--------------------------------------------------------------------------------
+Ir__________ 
+
+-- line 133 ----------------------------------------
+    .             // - for m == 2^n or m == 0, unsigned integer overflow is safe.
+    .             // - a * (m - 1) + c fits in _Tp, there is no overflow.
+    .             template<typename _Tp, _Tp __m, _Tp __a, _Tp __c, bool __s>
+    .               struct _Mod<_Tp, __m, __a, __c, true, __s>
+    .               {
+    .         	static _Tp
+    .         	__calc(_Tp __x)
+    .         	{
+  500 (0.0%)  	  _Tp __res = __a * __x + __c;
+    .         	  if (__m)
+6,500 (0.2%)  	    __res %= __m;
+    .         	  return __res;
+    .         	}
+    .               };
+    .         
+    .             template<typename _Tp, _Tp __m, _Tp __a = 1, _Tp __c = 0>
+    .               inline _Tp
+    .               __mod(_Tp __x)
+    .               {
+-- line 151 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Annotated source file: /usr/include/c++/13/bits/stl_algo.h
+--------------------------------------------------------------------------------
+Ir__________ 
+
+-- line 3715 ----------------------------------------
+    .            *  invocation, and significantly reduce the waste.
+    .           */
+    .           template<typename _IntType, typename _UniformRandomBitGenerator>
+    .             pair<_IntType, _IntType>
+    .             __gen_two_uniform_ints(_IntType __b0, _IntType __b1,
+    .         			   _UniformRandomBitGenerator&& __g)
+    .             {
+    .               _IntType __x
+  998 (0.0%)  	= uniform_int_distribution<_IntType>{0, (__b0 * __b1) - 1}(__g);
+    .               return std::make_pair(__x / __b1, __x % __b1);
+    .             }
+    .         
+    .           /**
+    .            *  @brief Shuffle the elements of a sequence using a uniform random
+    .            *         number generator.
+    .            *  @ingroup mutating_algorithms
+    .            *  @param  __first   A forward iterator.
+-- line 3731 ----------------------------------------
+-- line 3734 ----------------------------------------
+    .            *  @return  Nothing.
+    .            *
+    .            *  Reorders the elements in the range @p [__first,__last) using @p __g to
+    .            *  provide random numbers.
+    .           */
+    .           template<typename _RandomAccessIterator,
+    .         	   typename _UniformRandomNumberGenerator>
+    .             void
+    4 (0.0%)      shuffle(_RandomAccessIterator __first, _RandomAccessIterator __last,
+    .         	    _UniformRandomNumberGenerator&& __g)
+    .             {
+    .               // concept requirements
+    .               __glibcxx_function_requires(_Mutable_RandomAccessIteratorConcept<
+    .         	    _RandomAccessIterator>)
+    .               __glibcxx_requires_valid_range(__first, __last);
+    .         
+    2 (0.0%)        if (__first == __last)
+    .         	return;
+    .         
+    .               typedef typename iterator_traits<_RandomAccessIterator>::difference_type
+    .         	_DistanceType;
+    .         
+    .               typedef typename std::make_unsigned<_DistanceType>::type __ud_type;
+    .               typedef typename std::uniform_int_distribution<__ud_type> __distr_type;
+    .               typedef typename __distr_type::param_type __p_type;
+-- line 3758 ----------------------------------------
+-- line 3760 ----------------------------------------
+    .               typedef typename remove_reference<_UniformRandomNumberGenerator>::type
+    .         	_Gen;
+    .               typedef typename common_type<typename _Gen::result_type, __ud_type>::type
+    .         	__uc_type;
+    .         
+    .               const __uc_type __urngrange = __g.max() - __g.min();
+    .               const __uc_type __urange = __uc_type(__last - __first);
+    .         
+    7 (0.0%)        if (__urngrange / __urange >= __urange)
+    .                 // I.e. (__urngrange >= __urange * __urange) but without wrap issues.
+    .               {
+    .         	_RandomAccessIterator __i = __first + 1;
+    .         
+    .         	// Since we know the range isn't empty, an even number of elements
+    .         	// means an uneven number of elements /to swap/, in which case we
+    .         	// do the first one up front:
+    .         
+    2 (0.0%)  	if ((__urange % 2) == 0)
+    .         	{
+    .         	  __distr_type __d{0, 1};
+    .         	  std::iter_swap(__i++, __first + __d(__g));
+    .         	}
+    .         
+    .         	// Now we know that __last - __i is even, so we do the rest in pairs,
+    .         	// using a single distribution invocation to produce swap positions
+    .         	// for two successive elements at a time:
+    .         
+1,500 (0.1%)  	while (__i != __last)
+    .         	{
+  499 (0.0%)  	  const __uc_type __swap_range = __uc_type(__i - __first) + 1;
+    .         
+    .         	  const pair<__uc_type, __uc_type> __pospos =
+  499 (0.0%)  	    __gen_two_uniform_ints(__swap_range, __swap_range + 1, __g);
+    .         
+    .         	  std::iter_swap(__i++, __first + __pospos.first);
+    .         	  std::iter_swap(__i++, __first + __pospos.second);
+    .         	}
+    .         
+    .         	return;
+    .               }
+    .         
+    .               __distr_type __d;
+    .         
+    .               for (_RandomAccessIterator __i = __first + 1; __i != __last; ++__i)
+    .         	std::iter_swap(__i, __first + __d(__g, __p_type(0, __i - __first)));
+    4 (0.0%)      }
+    .         #endif // USE C99_STDINT
+    .         
+    .         #endif // C++11
+    .         
+    .         _GLIBCXX_BEGIN_NAMESPACE_ALGO
+    .         
+    .           /**
+    .            *  @brief Apply a function to every element of a sequence.
+-- line 3813 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Annotated source file: /usr/include/c++/13/bits/stl_function.h
+--------------------------------------------------------------------------------
+Ir___________ 
+
+-- line 400 ----------------------------------------
+     .         
+     .           /// One of the @link comparison_functors comparison functors@endlink.
+     .           template<typename _Tp>
+     .             struct less : public binary_function<_Tp, _Tp, bool>
+     .             {
+     .               _GLIBCXX14_CONSTEXPR
+     .               bool
+     .               operator()(const _Tp& __x, const _Tp& __y) const
+15,132 (0.5%)        { return __x < __y; }
+     .             };
+     .         
+     .           /// One of the @link comparison_functors comparison functors@endlink.
+     .           template<typename _Tp>
+     .             struct greater_equal : public binary_function<_Tp, _Tp, bool>
+     .             {
+     .               _GLIBCXX14_CONSTEXPR
+     .               bool
+-- line 416 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Annotated source file: /usr/include/c++/13/bits/stl_numeric.h
+--------------------------------------------------------------------------------
+Ir__________ 
+
+-- line 89 ----------------------------------------
+    .             {
+    .               // concept requirements
+    .               __glibcxx_function_requires(_Mutable_ForwardIteratorConcept<
+    .         				  _ForwardIterator>)
+    .               __glibcxx_function_requires(_ConvertibleConcept<_Tp,
+    .         	    typename iterator_traits<_ForwardIterator>::value_type>)
+    .               __glibcxx_requires_valid_range(__first, __last);
+    .         
+4,008 (0.1%)        for (; __first != __last; ++__first)
+    .         	{
+1,000 (0.0%)  	  *__first = __value;
+    .         	  ++__value;
+    .         	}
+    .             }
+    .         #endif
+    .         
+    .         _GLIBCXX_END_NAMESPACE_VERSION
+    .         
+    .         _GLIBCXX_BEGIN_NAMESPACE_ALGO
+-- line 107 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Annotated source file: /usr/include/c++/13/bits/stl_tree.h
+--------------------------------------------------------------------------------
+Ir___________ 
+
+-- line 167 ----------------------------------------
+     .           // Helper type to manage default initialization of node count and header.
+     .           struct _Rb_tree_header
+     .           {
+     .             _Rb_tree_node_base	_M_header;
+     .             size_t		_M_node_count; // Keeps track of size of tree.
+     .         
+     .             _Rb_tree_header() _GLIBCXX_NOEXCEPT
+     .             {
+     1 (0.0%)        _M_header._M_color = _S_red;
+     .               _M_reset();
+     .             }
+     .         
+     .         #if __cplusplus >= 201103L
+     .             _Rb_tree_header(_Rb_tree_header&& __x) noexcept
+     .             {
+     .               if (__x._M_header._M_parent != nullptr)
+     .         	_M_move_data(__x);
+-- line 183 ----------------------------------------
+-- line 200 ----------------------------------------
+     .               _M_node_count = __from._M_node_count;
+     .         
+     .               __from._M_reset();
+     .             }
+     .         
+     .             void
+     .             _M_reset()
+     .             {
+     1 (0.0%)        _M_header._M_parent = 0;
+     3 (0.0%)        _M_header._M_left = &_M_header;
+     1 (0.0%)        _M_header._M_right = &_M_header;
+     1 (0.0%)        _M_node_count = 0;
+     .             }
+     .           };
+     .         
+     .           template<typename _Val>
+     .             struct _Rb_tree_node : public _Rb_tree_node_base
+     .             {
+     .               typedef _Rb_tree_node<_Val>* _Link_type;
+     .         
+-- line 219 ----------------------------------------
+-- line 265 ----------------------------------------
+     .               typedef _Rb_tree_iterator<_Tp>		_Self;
+     .               typedef _Rb_tree_node_base::_Base_ptr	_Base_ptr;
+     .               typedef _Rb_tree_node<_Tp>*		_Link_type;
+     .         
+     .               _Rb_tree_iterator() _GLIBCXX_NOEXCEPT
+     .               : _M_node() { }
+     .         
+     .               explicit
+ 1,599 (0.1%)        _Rb_tree_iterator(_Base_ptr __x) _GLIBCXX_NOEXCEPT
+     .               : _M_node(__x) { }
+     .         
+     .               reference
+     .               operator*() const _GLIBCXX_NOEXCEPT
+     .               { return *static_cast<_Link_type>(_M_node)->_M_valptr(); }
+     .         
+     .               pointer
+     .               operator->() const _GLIBCXX_NOEXCEPT
+-- line 281 ----------------------------------------
+-- line 294 ----------------------------------------
+     .         	_Self __tmp = *this;
+     .         	_M_node = _Rb_tree_increment(_M_node);
+     .         	return __tmp;
+     .               }
+     .         
+     .               _Self&
+     .               operator--() _GLIBCXX_NOEXCEPT
+     .               {
+ 2,589 (0.1%)  	_M_node = _Rb_tree_decrement(_M_node);
+ 1,736 (0.1%)  	return *this;
+     .               }
+     .         
+     .               _Self
+     .               operator--(int) _GLIBCXX_NOEXCEPT
+     .               {
+     .         	_Self __tmp = *this;
+     .         	_M_node = _Rb_tree_decrement(_M_node);
+     .         	return __tmp;
+-- line 311 ----------------------------------------
+-- line 368 ----------------------------------------
+     .         	_M_node = _Rb_tree_increment(_M_node);
+     .         	return *this;
+     .               }
+     .         
+     .               _Self
+     .               operator++(int) _GLIBCXX_NOEXCEPT
+     .               {
+     .         	_Self __tmp = *this;
+ 2,632 (0.1%)  	_M_node = _Rb_tree_increment(_M_node);
+     .         	return __tmp;
+     .               }
+     .         
+     .               _Self&
+     .               operator--() _GLIBCXX_NOEXCEPT
+     .               {
+     .         	_M_node = _Rb_tree_decrement(_M_node);
+     .         	return *this;
+-- line 384 ----------------------------------------
+-- line 729 ----------------------------------------
+     .               { return this->_M_impl._M_header._M_right; }
+     .         
+     .               _Const_Base_ptr
+     .               _M_rightmost() const _GLIBCXX_NOEXCEPT
+     .               { return this->_M_impl._M_header._M_right; }
+     .         
+     .               _Link_type
+     .               _M_mbegin() const _GLIBCXX_NOEXCEPT
+ 2,300 (0.1%)        { return static_cast<_Link_type>(this->_M_impl._M_header._M_parent); }
+     .         
+     .               _Link_type
+     .               _M_begin() _GLIBCXX_NOEXCEPT
+     .               { return _M_mbegin(); }
+     .         
+     .               _Const_Link_type
+     .               _M_begin() const _GLIBCXX_NOEXCEPT
+     .               {
+     .         	return static_cast<_Const_Link_type>
+     .         	  (this->_M_impl._M_header._M_parent);
+     .               }
+     .         
+     .               _Base_ptr
+     .               _M_end() _GLIBCXX_NOEXCEPT
+   701 (0.0%)        { return &this->_M_impl._M_header; }
+     .         
+     .               _Const_Base_ptr
+     .               _M_end() const _GLIBCXX_NOEXCEPT
+     .               { return &this->_M_impl._M_header; }
+     .         
+     .               static const _Key&
+     .               _S_key(_Const_Link_type __x)
+     .               {
+-- line 760 ----------------------------------------
+-- line 773 ----------------------------------------
+     .         	      "comparison object must be invocable as const");
+     .         # endif // C++17
+     .         #endif // C++11
+     .         
+     .         	return _KeyOfValue()(*__x->_M_valptr());
+     .               }
+     .         
+     .               static _Link_type
+     3 (0.0%)        _S_left(_Base_ptr __x) _GLIBCXX_NOEXCEPT
+ 5,935 (0.2%)        { return static_cast<_Link_type>(__x->_M_left); }
+     .         
+     .               static _Const_Link_type
+     .               _S_left(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
+     .               { return static_cast<_Const_Link_type>(__x->_M_left); }
+     .         
+     .               static _Link_type
+     .               _S_right(_Base_ptr __x) _GLIBCXX_NOEXCEPT
+20,869 (0.7%)        { return static_cast<_Link_type>(__x->_M_right); }
+     .         
+     .               static _Const_Link_type
+     .               _S_right(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
+     .               { return static_cast<_Const_Link_type>(__x->_M_right); }
+     .         
+     .               static const _Key&
+     .               _S_key(_Const_Base_ptr __x)
+     .               { return _S_key(static_cast<_Const_Link_type>(__x)); }
+-- line 798 ----------------------------------------
+-- line 978 ----------------------------------------
+     .         	_Rb_tree(std::declval<_Rb_tree&&>(), std::declval<_Node_allocator&&>(),
+     .         		 std::declval<typename _Alloc_traits::is_always_equal>())) )
+     .               : _Rb_tree(std::move(__x), std::move(__a),
+     .         		 typename _Alloc_traits::is_always_equal{})
+     .               { }
+     .         #endif
+     .         
+     .               ~_Rb_tree() _GLIBCXX_NOEXCEPT
+     2 (0.0%)        { _M_erase(_M_begin()); }
+     .         
+     .               _Rb_tree&
+     .               operator=(const _Rb_tree& __x);
+     .         
+     .               // Accessors.
+     .               _Compare
+     .               key_comp() const
+     .               { return _M_impl._M_key_compare; }
+-- line 994 ----------------------------------------
+-- line 1819 ----------------------------------------
+     .               _M_insert_(_Base_ptr __x, _Base_ptr __p,
+     .         #if __cplusplus >= 201103L
+     .         		 _Arg&& __v,
+     .         #else
+     .         		 const _Val& __v,
+     .         #endif
+     .         		 _NodeGen& __node_gen)
+     .               {
+ 5,865 (0.2%)  	bool __insert_left = (__x != 0 || __p == _M_end()
+ 5,687 (0.2%)  			      || _M_impl._M_key_compare(_KeyOfValue()(__v),
+     .         							_S_key(__p)));
+     .         
+     .         	_Link_type __z = __node_gen(_GLIBCXX_FORWARD(_Arg, __v));
+     .         
+ 4,692 (0.2%)  	_Rb_tree_insert_and_rebalance(__insert_left, __z, __p,
+     .         				      this->_M_impl._M_header);
+ 1,173 (0.0%)  	++_M_impl._M_node_count;
+     .         	return iterator(__z);
+     .               }
+     .         
+     .           template<typename _Key, typename _Val, typename _KeyOfValue,
+     .         	   typename _Compare, typename _Alloc>
+     .         #if __cplusplus >= 201103L
+     .             template<typename _Arg>
+     .         #endif
+-- line 1843 ----------------------------------------
+-- line 1922 ----------------------------------------
+     .         	    __throw_exception_again;
+     .         	  }
+     .         	return __top;
+     .               }
+     .         
+     .           template<typename _Key, typename _Val, typename _KeyOfValue,
+     .         	   typename _Compare, typename _Alloc>
+     .             void
+    32 (0.0%)      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+     .             _M_erase(_Link_type __x)
+     .             {
+     .               // Erase without rebalancing.
+ 2,592 (0.1%)        while (__x != 0)
+     .         	{
+     9 (0.0%)  	  _M_erase(_S_right(__x));
+     .         	  _Link_type __y = _S_left(__x);
+     .         	  _M_drop_node(__x);
+     .         	  __x = __y;
+     .         	}
+    32 (0.0%)      }
+     .         
+     .           template<typename _Key, typename _Val, typename _KeyOfValue,
+     .         	   typename _Compare, typename _Alloc>
+     .             typename _Rb_tree<_Key, _Val, _KeyOfValue,
+     .         		      _Compare, _Alloc>::iterator
+     .             _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+     .             _M_lower_bound(_Link_type __x, _Base_ptr __y,
+     .         		   const _Key& __k)
+     .             {
+ 4,754 (0.2%)        while (__x != 0)
+ 2,292 (0.1%)  	if (!_M_impl._M_key_compare(_S_key(__x), __k))
+     .         	  __y = __x, __x = _S_left(__x);
+     .         	else
+ 1,146 (0.0%)  	  __x = _S_right(__x);
+     .               return iterator(__y);
+     .             }
+     .         
+     .           template<typename _Key, typename _Val, typename _KeyOfValue,
+     .         	   typename _Compare, typename _Alloc>
+     .             typename _Rb_tree<_Key, _Val, _KeyOfValue,
+     .         		      _Compare, _Alloc>::const_iterator
+     .             _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+-- line 1963 ----------------------------------------
+-- line 1975 ----------------------------------------
+     .           template<typename _Key, typename _Val, typename _KeyOfValue,
+     .         	   typename _Compare, typename _Alloc>
+     .             typename _Rb_tree<_Key, _Val, _KeyOfValue,
+     .         		      _Compare, _Alloc>::iterator
+     .             _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+     .             _M_upper_bound(_Link_type __x, _Base_ptr __y,
+     .         		   const _Key& __k)
+     .             {
+ 3,999 (0.1%)        while (__x != 0)
+ 2,212 (0.1%)  	if (_M_impl._M_key_compare(__k, _S_key(__x)))
+ 2,212 (0.1%)  	  __y = __x, __x = _S_left(__x);
+     .         	else
+     .         	  __x = _S_right(__x);
+     .               return iterator(__y);
+     .             }
+     .         
+     .           template<typename _Key, typename _Val, typename _KeyOfValue,
+     .         	   typename _Compare, typename _Alloc>
+     .             typename _Rb_tree<_Key, _Val, _KeyOfValue,
+-- line 1993 ----------------------------------------
+-- line 2008 ----------------------------------------
+     .         	   typename _Compare, typename _Alloc>
+     .             pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
+     .         			   _Compare, _Alloc>::iterator,
+     .         	 typename _Rb_tree<_Key, _Val, _KeyOfValue,
+     .         			   _Compare, _Alloc>::iterator>
+     .             _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+     .             equal_range(const _Key& __k)
+     .             {
+ 1,400 (0.0%)        _Link_type __x = _M_begin();
+   700 (0.0%)        _Base_ptr __y = _M_end();
+11,172 (0.4%)        while (__x != 0)
+     .         	{
+11,088 (0.4%)  	  if (_M_impl._M_key_compare(_S_key(__x), __k))
+     .         	    __x = _S_right(__x);
+ 3,081 (0.1%)  	  else if (_M_impl._M_key_compare(__k, _S_key(__x)))
+ 4,846 (0.2%)  	    __y = __x, __x = _S_left(__x);
+     .         	  else
+     .         	    {
+     .         	      _Link_type __xu(__x);
+     .         	      _Base_ptr __yu(__y);
+     .         	      __y = __x, __x = _S_left(__x);
+     .         	      __xu = _S_right(__xu);
+     .         	      return pair<iterator,
+     .         			  iterator>(_M_lower_bound(__x, __y, __k),
+-- line 2031 ----------------------------------------
+-- line 2100 ----------------------------------------
+     .             }
+     .         
+     .           template<typename _Key, typename _Val, typename _KeyOfValue,
+     .         	   typename _Compare, typename _Alloc>
+     .             pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
+     .         			   _Compare, _Alloc>::_Base_ptr,
+     .         	 typename _Rb_tree<_Key, _Val, _KeyOfValue,
+     .         			   _Compare, _Alloc>::_Base_ptr>
+ 6,400 (0.2%)      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+     .             _M_get_insert_unique_pos(const key_type& __k)
+     .             {
+     .               typedef pair<_Base_ptr, _Base_ptr> _Res;
+     .               _Link_type __x = _M_begin();
+     .               _Base_ptr __y = _M_end();
+     .               bool __comp = true;
+44,409 (1.6%)        while (__x != 0)
+     .         	{
+     .         	  __y = __x;
+     .         	  __comp = _M_impl._M_key_compare(__k, _S_key(__x));
+42,807 (1.5%)  	  __x = __comp ? _S_left(__x) : _S_right(__x);
+     .         	}
+     .               iterator __j = iterator(__y);
+ 3,198 (0.1%)        if (__comp)
+     .         	{
+ 1,746 (0.1%)  	  if (__j == begin())
+     .         	    return _Res(__x, __y);
+     .         	  else
+     .         	    --__j;
+     .         	}
+ 6,360 (0.2%)        if (_M_impl._M_key_compare(_S_key(__j._M_node), __k))
+     .         	return _Res(__x, __y);
+     .               return _Res(__j._M_node, 0);
+ 9,610 (0.3%)      }
+     .         
+     .           template<typename _Key, typename _Val, typename _KeyOfValue,
+     .         	   typename _Compare, typename _Alloc>
+     .             pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
+     .         			   _Compare, _Alloc>::_Base_ptr,
+     .         	 typename _Rb_tree<_Key, _Val, _KeyOfValue,
+     .         			   _Compare, _Alloc>::_Base_ptr>
+     .             _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+-- line 2140 ----------------------------------------
+-- line 2163 ----------------------------------------
+     .         #if __cplusplus >= 201103L
+     .             _M_insert_unique(_Arg&& __v)
+     .         #else
+     .             _M_insert_unique(const _Val& __v)
+     .         #endif
+     .             {
+     .               typedef pair<iterator, bool> _Res;
+     .               pair<_Base_ptr, _Base_ptr> __res
+ 4,800 (0.2%)  	= _M_get_insert_unique_pos(_KeyOfValue()(__v));
+     .         
+ 3,200 (0.1%)        if (__res.second)
+     .         	{
+     .         	  _Alloc_node __an(*this);
+     .         	  return _Res(_M_insert_(__res.first, __res.second,
+     .         				 _GLIBCXX_FORWARD(_Arg, __v), __an),
+     .         		      true);
+     .         	}
+     .         
+     .               return _Res(iterator(__res.first), false);
+-- line 2181 ----------------------------------------
+-- line 2486 ----------------------------------------
+     .           template<typename _Key, typename _Val, typename _KeyOfValue,
+     .         	   typename _Compare, typename _Alloc>
+     .             void
+     .             _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+     .             _M_erase_aux(const_iterator __position)
+     .             {
+     .               _Link_type __y =
+     .         	static_cast<_Link_type>(_Rb_tree_rebalance_for_erase
+ 2,632 (0.1%)  				(const_cast<_Base_ptr>(__position._M_node),
+     .         				 this->_M_impl._M_header));
+     .               _M_drop_node(__y);
+   658 (0.0%)        --_M_impl._M_node_count;
+     .             }
+     .         
+     .           template<typename _Key, typename _Val, typename _KeyOfValue,
+     .         	   typename _Compare, typename _Alloc>
+     .             void
+     .             _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+     .             _M_erase_aux(const_iterator __first, const_iterator __last)
+     .             {
+ 1,570 (0.1%)        if (__first == begin() && __last == end())
+     .         	clear();
+     .               else
+ 2,633 (0.1%)  	while (__first != __last)
+     .         	  _M_erase_aux(__first++);
+     .             }
+     .         
+     .           template<typename _Key, typename _Val, typename _KeyOfValue,
+     .         	   typename _Compare, typename _Alloc>
+     .             typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::size_type
+ 4,200 (0.1%)      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+     .             erase(const _Key& __x)
+     .             {
+     .               pair<iterator, iterator> __p = equal_range(__x);
+     .               const size_type __old_size = size();
+     .               _M_erase_aux(__p.first, __p.second);
+     .               return __old_size - size();
+ 4,200 (0.1%)      }
+     .         
+     .           template<typename _Key, typename _Val, typename _KeyOfValue,
+     .         	   typename _Compare, typename _Alloc>
+     .             typename _Rb_tree<_Key, _Val, _KeyOfValue,
+     .         		      _Compare, _Alloc>::iterator
+     .             _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+     .             find(const _Key& __k)
+     .             {
+-- line 2531 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Annotated source file: /usr/include/c++/13/bits/uniform_int_dist.h
+--------------------------------------------------------------------------------
+Ir__________ 
+
+-- line 196 ----------------------------------------
+    .               { return this->b(); }
+    .         
+    .               /**
+    .                * @brief Generating functions.
+    .                */
+    .               template<typename _UniformRandomBitGenerator>
+    .         	result_type
+    .         	operator()(_UniformRandomBitGenerator& __urng)
+2,000 (0.1%)          { return this->operator()(__urng, _M_param); }
+    .         
+    .               template<typename _UniformRandomBitGenerator>
+    .         	result_type
+    .         	operator()(_UniformRandomBitGenerator& __urng,
+    .         		   const param_type& __p);
+    .         
+    .               template<typename _ForwardIterator,
+    .         	       typename _UniformRandomBitGenerator>
+-- line 212 ----------------------------------------
+-- line 279 ----------------------------------------
+    .         	    }
+    .         	  return __product >> _Up_traits::__digits;
+    .         	}
+    .             };
+    .         
+    .           template<typename _IntType>
+    .             template<typename _UniformRandomBitGenerator>
+    .               typename uniform_int_distribution<_IntType>::result_type
+3,500 (0.1%)        uniform_int_distribution<_IntType>::
+    .               operator()(_UniformRandomBitGenerator& __urng,
+    .         		 const param_type& __param)
+    .               {
+    .         	typedef typename _UniformRandomBitGenerator::result_type _Gresult_type;
+    .         	typedef typename make_unsigned<result_type>::type __utype;
+    .         	typedef typename common_type<_Gresult_type, __utype>::type __uctype;
+    .         
+    .         	constexpr __uctype __urngmin = _UniformRandomBitGenerator::min();
+    .         	constexpr __uctype __urngmax = _UniformRandomBitGenerator::max();
+    .         	static_assert( __urngmin < __urngmax,
+    .         	    "Uniform random bit generator must define min() < max()");
+    .         	constexpr __uctype __urngrange = __urngmax - __urngmin;
+    .         
+1,000 (0.0%)  	const __uctype __urange
+    .         	  = __uctype(__param.b()) - __uctype(__param.a());
+    .         
+    .         	__uctype __ret;
+1,000 (0.0%)  	if (__urngrange > __urange)
+    .         	  {
+    .         	    // downscaling
+    .         
+  500 (0.0%)  	    const __uctype __uerange = __urange + 1; // __urange can be zero
+    .         
+    .         #if defined __UINT64_TYPE__ && defined __UINT32_TYPE__
+    .         #if __SIZEOF_INT128__
+    .         	    if _GLIBCXX17_CONSTEXPR (__urngrange == __UINT64_MAX__)
+    .         	      {
+    .         		// __urng produces values that use exactly 64-bits,
+    .         		// so use 128-bit integers to downscale to desired range.
+    .         		__UINT64_TYPE__ __u64erange = __uerange;
+-- line 317 ----------------------------------------
+-- line 326 ----------------------------------------
+    .         		// so use 64-bit integers to downscale to desired range.
+    .         		__UINT32_TYPE__ __u32erange = __uerange;
+    .         		__ret = _S_nd<__UINT64_TYPE__>(__urng, __u32erange);
+    .         	      }
+    .         	    else
+    .         #endif
+    .         	      {
+    .         		// fallback case (2 divisions)
+2,500 (0.1%)  		const __uctype __scaling = __urngrange / __uerange;
+  500 (0.0%)  		const __uctype __past = __uerange * __scaling;
+    .         		do
+  500 (0.0%)  		  __ret = __uctype(__urng()) - __urngmin;
+1,000 (0.0%)  		while (__ret >= __past);
+1,500 (0.1%)  		__ret /= __scaling;
+    .         	      }
+    .         	  }
+    .         	else if (__urngrange < __urange)
+    .         	  {
+    .         	    // upscaling
+    .         	    /*
+    .         	      Note that every value in [0, urange]
+    .         	      can be written uniquely as
+-- line 347 ----------------------------------------
+-- line 364 ----------------------------------------
+    .         			 (__urng, param_type(0, __urange / __uerngrange)));
+    .         		__ret = __tmp + (__uctype(__urng()) - __urngmin);
+    .         	      }
+    .         	    while (__ret > __urange || __ret < __tmp);
+    .         	  }
+    .         	else
+    .         	  __ret = __uctype(__urng()) - __urngmin;
+    .         
+  500 (0.0%)  	return __ret + __param.a();
+3,000 (0.1%)        }
+    .         
+    .         
+    .           template<typename _IntType>
+    .             template<typename _ForwardIterator,
+    .         	     typename _UniformRandomBitGenerator>
+    .               void
+    .               uniform_int_distribution<_IntType>::
+    .               __generate_impl(_ForwardIterator __f, _ForwardIterator __t,
+-- line 381 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Annotation summary
+--------------------------------------------------------------------------------
+Ir_______________ 
+
+  320,066 (11.4%)    annotated: files known & above threshold & readable, line numbers known
+        0            annotated: files known & above threshold & readable, line numbers unknown
+        0          unannotated: files known & above threshold & two or more non-identical
+2,264,924 (80.6%)  unannotated: files known & above threshold & unreadable 
+   53,729  (1.9%)  unannotated: files known & below threshold
+  170,253  (6.1%)  unannotated: files unknown
+

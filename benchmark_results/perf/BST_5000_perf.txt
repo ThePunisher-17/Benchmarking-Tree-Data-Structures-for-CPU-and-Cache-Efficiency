@@ -1,0 +1,32 @@
+# started on Sun Jul  6 14:35:58 2025
+
+
+ Performance counter stats for './benchmark BST 5000 benchmark_results/csv/BST_results.csv':
+
+              2.08 msec task-clock                       #    0.798 CPUs utilized             
+                 3      context-switches                 #    1.444 K/sec                     
+                 2      cpu-migrations                   #  962.769 /sec                      
+               183      page-faults                      #   88.093 K/sec                     
+         6,716,864      cpu_atom/cycles/                 #    3.233 GHz                         (25.23%)
+         9,027,590      cpu_core/cycles/                 #    4.346 GHz                         (68.85%)
+         7,918,113      cpu_atom/instructions/           #    1.18  insn per cycle              (31.15%)
+         9,432,187      cpu_core/instructions/           #    1.04  insn per cycle              (68.85%)
+         1,394,309      cpu_atom/branches/               #  671.199 M/sec                       (31.15%)
+         2,256,677      cpu_core/branches/               #    1.086 G/sec                       (68.85%)
+            45,371      cpu_atom/branch-misses/          #    3.25% of all branches             (31.15%)
+           138,656      cpu_core/branch-misses/          #    6.14% of all branches             (68.85%)
+             TopdownL1 (cpu_core)                 #     15.3 %  tma_backend_bound      
+                                                  #     21.1 %  tma_bad_speculation    
+                                                  #     46.3 %  tma_frontend_bound     
+                                                  #     17.3 %  tma_retiring             (68.85%)
+             TopdownL1 (cpu_atom)                 #     21.8 %  tma_bad_speculation    
+                                                  #     27.6 %  tma_retiring             (31.15%)
+                                                  #     25.5 %  tma_backend_bound      
+                                                  #     25.1 %  tma_frontend_bound       (31.15%)
+
+       0.002601594 seconds time elapsed
+
+       0.002575000 seconds user
+       0.000000000 seconds sys
+
+

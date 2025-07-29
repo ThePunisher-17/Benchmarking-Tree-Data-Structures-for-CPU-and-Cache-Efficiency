@@ -1,0 +1,28 @@
+# started on Sun Jul  6 14:36:57 2025
+
+
+ Performance counter stats for './benchmark vEB 500000 benchmark_results/csv/vEB_results.csv':
+
+             29.70 msec task-clock                       #    0.989 CPUs utilized             
+                 1      context-switches                 #   33.671 /sec                      
+                 1      cpu-migrations                   #   33.671 /sec                      
+             1,967      page-faults                      #   66.231 K/sec                     
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+       136,330,302      cpu_core/cycles/                 #    4.590 GHz                       
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+       138,944,652      cpu_core/instructions/           #    1.02  insn per cycle            
+     <not counted>      cpu_atom/branches/                                                      (0.00%)
+        22,589,611      cpu_core/branches/               #  760.617 M/sec                     
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+         3,987,298      cpu_core/branch-misses/          #   17.65% of all branches           
+             TopdownL1 (cpu_core)                 #     16.0 %  tma_backend_bound      
+                                                  #     39.0 %  tma_bad_speculation    
+                                                  #     29.1 %  tma_frontend_bound     
+                                                  #     16.0 %  tma_retiring           
+
+       0.030017205 seconds time elapsed
+
+       0.026173000 seconds user
+       0.003877000 seconds sys
+
+

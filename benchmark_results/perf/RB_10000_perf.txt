@@ -1,0 +1,32 @@
+# started on Sun Jul  6 14:36:43 2025
+
+
+ Performance counter stats for './benchmark RB 10000 benchmark_results/csv/RB_results.csv':
+
+              2.70 msec task-clock                       #    0.886 CPUs utilized             
+                 1      context-switches                 #  370.975 /sec                      
+                 1      cpu-migrations                   #  370.975 /sec                      
+               267      page-faults                      #   99.050 K/sec                     
+         8,251,239      cpu_atom/cycles/                 #    3.061 GHz                         (4.56%)
+        11,745,563      cpu_core/cycles/                 #    4.357 GHz                         (94.06%)
+         4,753,676      cpu_atom/instructions/           #    0.58  insn per cycle              (5.94%)
+        14,647,218      cpu_core/instructions/           #    1.25  insn per cycle              (94.06%)
+           857,732      cpu_atom/branches/               #  318.197 M/sec                       (5.94%)
+         2,998,282      cpu_core/branches/               #    1.112 G/sec                       (94.06%)
+            50,951      cpu_atom/branch-misses/          #    5.94% of all branches             (5.94%)
+           150,211      cpu_core/branch-misses/          #    5.01% of all branches             (94.06%)
+             TopdownL1 (cpu_core)                 #     18.4 %  tma_backend_bound      
+                                                  #     30.5 %  tma_bad_speculation    
+                                                  #     31.6 %  tma_frontend_bound     
+                                                  #     19.5 %  tma_retiring             (94.06%)
+             TopdownL1 (cpu_atom)                 #     23.5 %  tma_bad_speculation    
+                                                  #     16.3 %  tma_retiring             (5.94%)
+                                                  #     24.6 %  tma_backend_bound      
+                                                  #     35.6 %  tma_frontend_bound       (5.94%)
+
+       0.003044100 seconds time elapsed
+
+       0.002072000 seconds user
+       0.001035000 seconds sys
+
+

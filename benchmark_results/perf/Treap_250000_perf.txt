@@ -1,0 +1,28 @@
+# started on Sun Jul  6 14:36:30 2025
+
+
+ Performance counter stats for './benchmark Treap 250000 benchmark_results/csv/Treap_results.csv':
+
+            154.69 msec task-clock                       #    0.997 CPUs utilized             
+                 2      context-switches                 #   12.929 /sec                      
+                 1      cpu-migrations                   #    6.464 /sec                      
+             2,516      page-faults                      #   16.265 K/sec                     
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+       717,392,236      cpu_core/cycles/                 #    4.638 GHz                       
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+       429,282,922      cpu_core/instructions/           #    0.60  insn per cycle            
+     <not counted>      cpu_atom/branches/                                                      (0.00%)
+        99,865,560      cpu_core/branches/               #  645.579 M/sec                     
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+        11,825,941      cpu_core/branch-misses/          #   11.84% of all branches           
+             TopdownL1 (cpu_core)                 #     19.2 %  tma_backend_bound      
+                                                  #     28.1 %  tma_bad_speculation    
+                                                  #     43.3 %  tma_frontend_bound     
+                                                  #      9.4 %  tma_retiring           
+
+       0.155176494 seconds time elapsed
+
+       0.150570000 seconds user
+       0.004568000 seconds sys
+
+

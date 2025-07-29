@@ -1,0 +1,28 @@
+# started on Sun Jul  6 14:36:15 2025
+
+
+ Performance counter stats for './benchmark AVL 250000 benchmark_results/csv/AVL_results.csv':
+
+            118.45 msec task-clock                       #    0.995 CPUs utilized             
+                 2      context-switches                 #   16.885 /sec                      
+                 1      cpu-migrations                   #    8.442 /sec                      
+             2,515      page-faults                      #   21.233 K/sec                     
+     <not counted>      cpu_atom/cycles/                                                        (0.00%)
+       543,111,622      cpu_core/cycles/                 #    4.585 GHz                       
+     <not counted>      cpu_atom/instructions/                                                  (0.00%)
+       479,034,522      cpu_core/instructions/           #    0.88  insn per cycle            
+     <not counted>      cpu_atom/branches/                                                      (0.00%)
+       107,391,358      cpu_core/branches/               #  906.641 M/sec                     
+     <not counted>      cpu_atom/branch-misses/                                                 (0.00%)
+         7,236,705      cpu_core/branch-misses/          #    6.74% of all branches           
+             TopdownL1 (cpu_core)                 #     20.3 %  tma_backend_bound      
+                                                  #     25.7 %  tma_bad_speculation    
+                                                  #     40.8 %  tma_frontend_bound     
+                                                  #     13.3 %  tma_retiring           
+
+       0.119000356 seconds time elapsed
+
+       0.116914000 seconds user
+       0.002015000 seconds sys
+
+

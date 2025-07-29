@@ -1,0 +1,1088 @@
+--------------------------------------------------------------------------------
+-- Metadata
+--------------------------------------------------------------------------------
+Invocation:       /usr/bin/cg_annotate cachegrind.out.13434
+Command:          ./benchmark AVL 10000 benchmark_results/csv/AVL_results.csv
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Threshold:        0.1%
+Annotation:       on
+
+--------------------------------------------------------------------------------
+-- Summary
+--------------------------------------------------------------------------------
+Ir_________________ 
+
+16,303,528 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+-- File:function summary
+--------------------------------------------------------------------------------
+  Ir______________________  file:function
+
+< 9,912,441 (60.8%, 60.8%)  /home/pratik/Desktop/Details 3/main.cpp:
+  6,493,309 (39.8%)           avl_insert(AVLNode*, int)
+  3,084,916 (18.9%)           avl_delete(AVLNode*, int)
+    126,084  (0.8%)           benchmark_tree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&)
+    120,645  (0.7%)           rotateLeft(AVLNode*)
+     74,229  (0.5%)           rotateRight(AVLNode*)
+
+< 3,036,323 (18.6%, 79.4%)  ./malloc/./malloc/malloc.c:
+  1,543,373  (9.5%)           _int_malloc
+    530,314  (3.3%)           malloc
+    453,174  (2.8%)           _int_free
+    235,729  (1.4%)           malloc_consolidate
+    183,232  (1.1%)           free
+     49,275  (0.3%)           unlink_chunk.isra.0
+     40,032  (0.2%)           alloc_perturb
+
+<   838,909  (5.1%, 84.6%)  /usr/include/c++/13/bits/stl_algobase.h:
+    565,053  (3.5%)           avl_insert(AVLNode*, int)
+    249,246  (1.5%)           avl_delete(AVLNode*, int)
+
+<   795,772  (4.9%, 89.4%)  ./elf/./elf/dl-lookup.c:
+    497,744  (3.1%)           do_lookup_x
+    185,267  (1.1%)           _dl_lookup_symbol_x
+    112,761  (0.7%)           check_match
+
+<   492,502  (3.0%, 92.5%)  ./elf/../sysdeps/generic/dl-new-hash.h:_dl_lookup_symbol_x
+
+<   175,114  (1.1%, 93.5%)  /usr/include/c++/13/bits/uniform_int_dist.h:
+    155,114  (1.0%)           unsigned long std::uniform_int_distribution<unsigned long>::operator()<std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&, std::uniform_int_distribution<unsigned long>::param_type const&) [clone .isra.0]
+     20,000  (0.1%)           void std::shuffle<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&&)
+
+<   146,990  (0.9%, 94.4%)  ./elf/./elf/dl-reloc.c:_dl_relocate_object
+
+<   118,533  (0.7%, 95.2%)  ./elf/../sysdeps/x86_64/dl-machine.h:
+    118,396  (0.7%)           _dl_relocate_object
+
+<   110,601  (0.7%, 95.9%)  ./elf/./elf/do-rel.h:
+    110,545  (0.7%)           _dl_relocate_object
+
+<   104,542  (0.6%, 96.5%)  ???:
+     66,566  (0.4%)           ???
+
+<    70,494  (0.4%, 96.9%)  /usr/include/c++/13/bits/random.h:unsigned long std::uniform_int_distribution<unsigned long>::operator()<std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&, std::uniform_int_distribution<unsigned long>::param_type const&) [clone .isra.0]
+
+<    68,077  (0.4%, 97.3%)  ./string/../sysdeps/x86_64/multiarch/../multiarch/strcmp-sse2.S:
+     68,045  (0.4%)           strcmp
+
+<    50,008  (0.3%, 97.6%)  /usr/include/c++/13/bits/stl_numeric.h:main
+
+<    44,996  (0.3%, 97.9%)  /usr/include/c++/13/bits/move.h:void std::shuffle<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&&)
+
+<    40,013  (0.2%, 98.2%)  ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S:__memset_avx2_unaligned_erms
+
+<    39,719  (0.2%, 98.4%)  ./malloc/./malloc/arena.c:
+     20,015  (0.1%)           malloc
+     19,632  (0.1%)           free
+
+<    35,015  (0.2%, 98.6%)  /usr/include/c++/13/bits/stl_algo.h:void std::shuffle<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&&)
+
+<    31,565  (0.2%, 98.8%)  ./elf/./elf/dl-tunables.c:
+     30,377  (0.2%)           __GI___tunables_init
+
+<    25,722  (0.2%, 99.0%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:
+     24,745  (0.2%)           __memcpy_avx_unaligned_erms
+
+<    25,018  (0.2%, 99.1%)  /usr/include/c++/13/bits/stl_iterator.h:
+     25,003  (0.2%)           void std::shuffle<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&&)
+
+<    16,447  (0.1%, 99.2%)  ./elf/./elf/dl-version.c:
+     16,336  (0.1%)           _dl_check_map_versions
+
+--------------------------------------------------------------------------------
+-- Function:file summary
+--------------------------------------------------------------------------------
+  Ir______________________  function:file
+
+> 7,058,362 (43.3%, 43.3%)  avl_insert(AVLNode*, int):
+  6,493,309 (39.8%)           /home/pratik/Desktop/Details 3/main.cpp
+    565,053  (3.5%)           /usr/include/c++/13/bits/stl_algobase.h
+
+> 3,334,162 (20.5%, 63.7%)  avl_delete(AVLNode*, int):
+  3,084,916 (18.9%)           /home/pratik/Desktop/Details 3/main.cpp
+    249,246  (1.5%)           /usr/include/c++/13/bits/stl_algobase.h
+
+> 1,543,373  (9.5%, 73.2%)  _int_malloc:./malloc/./malloc/malloc.c
+
+>   677,769  (4.2%, 77.4%)  _dl_lookup_symbol_x:
+    492,502  (3.0%)           ./elf/../sysdeps/generic/dl-new-hash.h
+    185,267  (1.1%)           ./elf/./elf/dl-lookup.c
+
+>   550,329  (3.4%, 80.7%)  malloc:
+    530,314  (3.3%)           ./malloc/./malloc/malloc.c
+     20,015  (0.1%)           ./malloc/./malloc/arena.c
+
+>   514,812  (3.2%, 83.9%)  do_lookup_x:
+    497,744  (3.1%)           ./elf/./elf/dl-lookup.c
+
+>   453,174  (2.8%, 86.7%)  _int_free:./malloc/./malloc/malloc.c
+
+>   386,364  (2.4%, 89.1%)  _dl_relocate_object:
+    146,990  (0.9%)           ./elf/./elf/dl-reloc.c
+    118,396  (0.7%)           ./elf/../sysdeps/x86_64/dl-machine.h
+    110,545  (0.7%)           ./elf/./elf/do-rel.h
+
+>   235,729  (1.4%, 90.5%)  malloc_consolidate:./malloc/./malloc/malloc.c
+
+>   225,608  (1.4%, 91.9%)  unsigned long std::uniform_int_distribution<unsigned long>::operator()<std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&, std::uniform_int_distribution<unsigned long>::param_type const&) [clone .isra.0]:
+    155,114  (1.0%)           /usr/include/c++/13/bits/uniform_int_dist.h
+     70,494  (0.4%)           /usr/include/c++/13/bits/random.h
+
+>   202,864  (1.2%, 93.1%)  free:
+    183,232  (1.1%)           ./malloc/./malloc/malloc.c
+     19,632  (0.1%)           ./malloc/./malloc/arena.c
+
+>   136,127  (0.8%, 94.0%)  rotateLeft(AVLNode*):
+    120,645  (0.7%)           /home/pratik/Desktop/Details 3/main.cpp
+
+>   126,139  (0.8%, 94.7%)  benchmark_tree(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&, std::vector<int, std::allocator<int> > const&):
+    126,084  (0.8%)           /home/pratik/Desktop/Details 3/main.cpp
+
+>   125,014  (0.8%, 95.5%)  void std::shuffle<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul> >(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::linear_congruential_engine<unsigned long, 16807ul, 0ul, 2147483647ul>&&):
+     44,996  (0.3%)           /usr/include/c++/13/bits/move.h
+     35,015  (0.2%)           /usr/include/c++/13/bits/stl_algo.h
+     25,003  (0.2%)           /usr/include/c++/13/bits/stl_iterator.h
+     20,000  (0.1%)           /usr/include/c++/13/bits/uniform_int_dist.h
+
+>   112,761  (0.7%, 96.2%)  check_match:./elf/./elf/dl-lookup.c
+
+>    83,333  (0.5%, 96.7%)  rotateRight(AVLNode*):
+     74,229  (0.5%)           /home/pratik/Desktop/Details 3/main.cpp
+
+>    68,067  (0.4%, 97.1%)  strcmp:
+     68,045  (0.4%)           ./string/../sysdeps/x86_64/multiarch/../multiarch/strcmp-sse2.S
+
+>    66,566  (0.4%, 97.5%)  ???:???
+
+>    50,189  (0.3%, 97.8%)  main:
+     50,008  (0.3%)           /usr/include/c++/13/bits/stl_numeric.h
+
+>    49,275  (0.3%, 98.1%)  unlink_chunk.isra.0:./malloc/./malloc/malloc.c
+
+>    40,032  (0.2%, 98.4%)  alloc_perturb:./malloc/./malloc/malloc.c
+
+>    40,013  (0.2%, 98.6%)  __memset_avx2_unaligned_erms:./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+>    34,008  (0.2%, 98.8%)  __GI___tunables_init:
+     30,377  (0.2%)           ./elf/./elf/dl-tunables.c
+
+>    24,745  (0.2%, 99.0%)  __memcpy_avx_unaligned_erms:./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+>    16,390  (0.1%, 99.1%)  _dl_check_map_versions:
+     16,336  (0.1%)           ./elf/./elf/dl-version.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/../sysdeps/generic/dl-new-hash.h
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/../sysdeps/generic/dl-new-hash.h
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/../sysdeps/x86_64/dl-machine.h
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/../sysdeps/x86_64/dl-machine.h
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/./elf/dl-lookup.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/./elf/dl-lookup.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/./elf/dl-reloc.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/./elf/dl-reloc.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/./elf/dl-tunables.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/./elf/dl-tunables.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/./elf/dl-version.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/./elf/dl-version.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./elf/./elf/do-rel.h
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./elf/./elf/do-rel.h
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./malloc/./malloc/arena.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./malloc/./malloc/arena.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./malloc/./malloc/malloc.c
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./malloc/./malloc/malloc.c
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./string/../sysdeps/x86_64/multiarch/../multiarch/strcmp-sse2.S
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./string/../sysdeps/x86_64/multiarch/../multiarch/strcmp-sse2.S
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S
+
+--------------------------------------------------------------------------------
+-- Annotated source file: ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+--------------------------------------------------------------------------------
+Unannotated because one or more of these original files are unreadable:
+- ./string/../sysdeps/x86_64/multiarch/memset-vec-unaligned-erms.S
+
+--------------------------------------------------------------------------------
+-- Annotated source file: /home/pratik/Desktop/Details 3/main.cpp
+--------------------------------------------------------------------------------
+Ir_______________ 
+
+-- line 15 ----------------------------------------
+        .          using namespace std;
+        .          using namespace chrono;
+        .          
+        .          // ================= Memory Profiler =================
+        .          size_t current_allocated_bytes = 0;
+        .          size_t peak_allocated_bytes = 0;
+        .          
+        .          void *operator new(std::size_t size) noexcept(false)
+        1  (0.0%)  {
+   35,352  (0.2%)      current_allocated_bytes += size;
+   23,566  (0.1%)      if (current_allocated_bytes > peak_allocated_bytes)
+   11,786  (0.1%)          peak_allocated_bytes = current_allocated_bytes;
+   23,569  (0.1%)      return malloc(size);
+        .          }
+        .          
+        .          void operator delete(void *ptr) noexcept
+    6,544  (0.0%)  {
+    6,544  (0.0%)      free(ptr);
+        .          }
+        .          
+        .          long get_peak_rss_kb()
+        .          {
+        .              struct rusage r;
+        3  (0.0%)      getrusage(RUSAGE_SELF, &r);
+        .              return r.ru_maxrss;
+        .          }
+        .          
+        .          void report_memory_usage(std::ostream &out = std::cout)
+        7  (0.0%)  {
+        .              out << "[Memory] Peak Allocated Bytes (C++ counters): " << peak_allocated_bytes << " bytes\n";
+        .              out << "[Memory] Peak RSS (Resident Set Size): " << get_peak_rss_kb() << " KB\n";
+        2  (0.0%)  }
+        .          
+        .          // ================= Benchmark Struct =================
+        .          struct OperationStats
+        .          {
+        .              double insert_time = 0;
+        .              double search_time = 0;
+        .              double update_time = 0;
+        .              double delete_time = 0;
+-- line 54 ----------------------------------------
+-- line 138 ----------------------------------------
+        .                  return bst_successor(root->left, key, root->key);
+        .          }
+        .          
+        .          // ==================== AVL Tree ====================
+        .          struct AVLNode
+        .          {
+        .              int key, height;
+        .              AVLNode *left, *right;
+   47,112  (0.3%)      AVLNode(int k) : key(k), height(1), left(nullptr), right(nullptr) {}
+        .          };
+        .          
+        .          int height(AVLNode *node)
+        .          {
+1,732,563 (10.6%)      return node ? node->height : 0;
+        .          }
+        .          
+        .          int balanceFactor(AVLNode *node)
+        .          {
+  263,885  (1.6%)      return node ? height(node->left) - height(node->right) : 0;
+        .          }
+        .          
+        .          void updateHeight(AVLNode *node)
+        .          {
+        .              if (node)
+  865,982  (5.3%)          node->height = 1 + max(height(node->left), height(node->right));
+        .          }
+        .          
+        .          AVLNode *rotateRight(AVLNode *y)
+    3,323  (0.0%)  {
+    3,323  (0.0%)      AVLNode *x = y->left;
+    4,520  (0.0%)      AVLNode *T2 = x->right;
+    4,882  (0.0%)      x->right = y;
+    4,882  (0.0%)      y->left = T2;
+        .              updateHeight(y);
+        .              updateHeight(x);
+        .              return x;
+    6,646  (0.0%)  }
+        .          
+        .          AVLNode *rotateLeft(AVLNode *x)
+    5,498  (0.0%)  {
+    5,498  (0.0%)      AVLNode *y = x->right;
+    5,498  (0.0%)      AVLNode *T2 = y->left;
+    5,498  (0.0%)      y->left = x;
+    5,498  (0.0%)      x->right = T2;
+        .              updateHeight(x);
+        .              updateHeight(y);
+        .              return y;
+   10,996  (0.1%)  }
+        .          
+        .          AVLNode *avl_insert(AVLNode *node, int key)
+1,007,285  (6.2%)  {
+  592,593  (3.6%)      if (!node)
+        .                  return new AVLNode(key);
+  379,358  (2.3%)      if (key < node->key)
+  285,246  (1.7%)          node->left = avl_insert(node->left, key);
+   94,597  (0.6%)      else if (key > node->key)
+  361,500  (2.2%)          node->right = avl_insert(node->right, key);
+        .              else
+  184,533  (1.1%)          return node;
+        .          
+        .              updateHeight(node);
+        .              int balance = balanceFactor(node);
+        .          
+  376,202  (2.3%)      if (balance > 1 && key < node->left->key)
+        .                  return rotateRight(node);
+  370,630  (2.3%)      if (balance < -1 && key > node->right->key)
+        .                  return rotateLeft(node);
+    1,447  (0.0%)      if (balance > 1 && key > node->left->key)
+        .              {
+    4,341  (0.0%)          node->left = rotateLeft(node->left);
+    2,894  (0.0%)          return rotateRight(node);
+        .              }
+    1,152  (0.0%)      if (balance < -1 && key < node->right->key)
+        .              {
+    2,304  (0.0%)          node->right = rotateRight(node->right);
+    5,004  (0.0%)          return rotateLeft(node);
+        .              }
+        .          
+        .              return node;
+  801,879  (4.9%)  }
+        .          
+        .          AVLNode *minValueNode(AVLNode *node)
+        .          {
+    4,169  (0.0%)      AVLNode *current = node;
+   40,592  (0.2%)      while (current->left != nullptr)
+        .                  current = current->left;
+        .              return current;
+        .          }
+        .          
+        .          AVLNode *avl_delete(AVLNode *root, int key)
+  363,088  (2.2%)  {
+  271,855  (1.7%)      if (!root)
+      922  (0.0%)          return root;
+  180,622  (1.1%)      if (key < root->key)
+  174,972  (1.1%)          root->left = avl_delete(root->left, key);
+   46,568  (0.3%)      else if (key > root->key)
+   46,568  (0.3%)          root->right = avl_delete(root->right, key);
+        .              else
+        .              {
+   43,431  (0.3%)          if (!root->left || !root->right)
+        .                  {
+      300  (0.0%)              AVLNode *temp = root->left ? root->left : root->right;
+   19,617  (0.1%)              delete root;
+        .                      return temp;
+        .                  }
+        .                  AVLNode *temp = minValueNode(root->right);
+    7,738  (0.0%)          root->key = temp->key;
+  160,116  (1.0%)          root->right = avl_delete(root->right, temp->key);
+        .              }
+        .          
+        .              updateHeight(root);
+        .              int balance = balanceFactor(root);
+        .          
+  166,420  (1.0%)      if (balance > 1 && balanceFactor(root->left) >= 0)
+        .                  return rotateRight(root);
+      298  (0.0%)      if (balance > 1 && balanceFactor(root->left) < 0)
+        .              {
+    1,137  (0.0%)          root->left = rotateLeft(root->left);
+      758  (0.0%)          return rotateRight(root);
+        .              }
+  167,230  (1.0%)      if (balance < -1 && balanceFactor(root->right) <= 0)
+        .                  return rotateLeft(root);
+      252  (0.0%)      if (balance < -1 && balanceFactor(root->right) > 0)
+        .              {
+      690  (0.0%)          root->right = rotateRight(root->right);
+    2,340  (0.0%)          return rotateLeft(root);
+        .              }
+        .          
+   81,861  (0.5%)      return root;
+  450,762  (2.8%)  }
+        .          
+        .          bool avl_search(AVLNode *root, int key)
+        .          {
+        .              if (!root)
+        .                  return false;
+        .              if (root->key == key)
+        .                  return true;
+        .              return avl_search(key < root->key ? root->left : root->right, key);
+-- line 275 ----------------------------------------
+-- line 439 ----------------------------------------
+        .          {
+        .              auto it = tree.upper_bound(key);
+        .              if (it == tree.end())
+        .                  return -1;
+        .              return *it;
+        .          }
+        .          
+        .          // ==================== vEB Tree ====================
+        4  (0.0%)  vector<int> vebTree;
+        .          
+        .          void build_veb_layout(const vector<int> &sorted, int low, int high, int index)
+        .          {
+        .              if (low > high || index >= (int)vebTree.size())
+        .                  return;
+        .              int mid = (low + high) / 2;
+        .              vebTree[index] = sorted[mid];
+        .              build_veb_layout(sorted, low, mid - 1, 2 * index + 1);
+-- line 455 ----------------------------------------
+-- line 469 ----------------------------------------
+        .          }
+        .          
+        .          // ==================== Benchmark Dispatcher ====================
+        .          OperationStats benchmark_tree(const string &tree_type,
+        .                                        const vector<int> &data,
+        .                                        const vector<int> &update_data,
+        .                                        const vector<int> &delete_data,
+        .                                        const vector<int> &pred_succ_data)
+       16  (0.0%)  {
+        4  (0.0%)      OperationStats stats;
+        1  (0.0%)      auto t1 = high_resolution_clock::now(), t2 = t1;
+        .          
+        .              if (tree_type == "BST")
+        .              {
+        .                  BSTNode *root = nullptr;
+        .                  t1 = high_resolution_clock::now();
+        .                  for (int x : data)
+        .                      root = bst_insert(root, x);
+        .                  t2 = high_resolution_clock::now();
+-- line 487 ----------------------------------------
+-- line 518 ----------------------------------------
+        .                  for (int x : pred_succ_data)
+        .                      bst_successor(root, x);
+        .                  t2 = high_resolution_clock::now();
+        .                  stats.succ_time = duration_cast<milliseconds>(t2 - t1).count();
+        .              }
+        .          
+        .              else if (tree_type == "AVL")
+        .              {
+        1  (0.0%)          AVLNode *root = nullptr;
+        2  (0.0%)          t1 = high_resolution_clock::now();
+   30,004  (0.2%)          for (int x : data)
+   30,000  (0.2%)              root = avl_insert(root, x);
+        1  (0.0%)          t2 = high_resolution_clock::now();
+        3  (0.0%)          stats.insert_time = duration_cast<milliseconds>(t2 - t1).count();
+        .          
+        2  (0.0%)          t1 = high_resolution_clock::now();
+        .                  for (int x : data)
+        .                      avl_search(root, x);
+        1  (0.0%)          t2 = high_resolution_clock::now();
+        3  (0.0%)          stats.search_time = duration_cast<milliseconds>(t2 - t1).count();
+        .          
+        2  (0.0%)          t1 = high_resolution_clock::now();
+   24,005  (0.1%)          for (int x : update_data)
+        .                  {
+   18,000  (0.1%)              root = avl_delete(root, x);
+   18,000  (0.1%)              root = avl_insert(root, x + 1);
+        .                  }
+        1  (0.0%)          t2 = high_resolution_clock::now();
+        3  (0.0%)          stats.update_time = duration_cast<milliseconds>(t2 - t1).count();
+        .          
+        2  (0.0%)          t1 = high_resolution_clock::now();
+    3,004  (0.0%)          for (int x : delete_data)
+    3,000  (0.0%)              root = avl_delete(root, x);
+        .                  t2 = high_resolution_clock::now();
+        .                  stats.delete_time = duration_cast<milliseconds>(t2 - t1).count();
+        .          
+        .                  t1 = high_resolution_clock::now();
+        .                  for (int x : pred_succ_data)
+        .                      avl_predecessor(root, x);
+        .                  t2 = high_resolution_clock::now();
+        .                  stats.pred_time = duration_cast<milliseconds>(t2 - t1).count();
+-- line 558 ----------------------------------------
+-- line 586 ----------------------------------------
+        .                      root = treap_insert(root, x + 1);
+        .                  }
+        .                  t2 = high_resolution_clock::now();
+        .                  stats.update_time = duration_cast<milliseconds>(t2 - t1).count();
+        .          
+        .                  t1 = high_resolution_clock::now();
+        .                  for (int x : delete_data)
+        .                      root = treap_delete(root, x);
+        1  (0.0%)          t2 = high_resolution_clock::now();
+        3  (0.0%)          stats.delete_time = duration_cast<milliseconds>(t2 - t1).count();
+        .          
+        2  (0.0%)          t1 = high_resolution_clock::now();
+        .                  for (int x : pred_succ_data)
+        .                      treap_predecessor(root, x);
+        1  (0.0%)          t2 = high_resolution_clock::now();
+        3  (0.0%)          stats.pred_time = duration_cast<milliseconds>(t2 - t1).count();
+        .          
+        2  (0.0%)          t1 = high_resolution_clock::now();
+        .                  for (int x : pred_succ_data)
+        .                      treap_successor(root, x);
+        1  (0.0%)          t2 = high_resolution_clock::now();
+        4  (0.0%)          stats.succ_time = duration_cast<milliseconds>(t2 - t1).count();
+        .              }
+        .          
+        .              else if (tree_type == "RB")
+        .              {
+        .                  RBTree tree;
+        .                  t1 = high_resolution_clock::now();
+        .                  for (int x : data)
+        .                      rbtree_insert(tree, x);
+-- line 615 ----------------------------------------
+-- line 669 ----------------------------------------
+        .          
+        .                  stats.update_time = 0;
+        .                  stats.delete_time = 0;
+        .                  stats.pred_time = 0;
+        .                  stats.succ_time = 0;
+        .              }
+        .          
+        .              return stats;
+       12  (0.0%)  }
+        .          
+        .          // =========================== MAIN ===============================
+        .          int main(int argc, char **argv)
+       13  (0.0%)  {
+        2  (0.0%)      if (argc != 4)
+        .              {
+        .                  cerr << "Usage: " << argv[0] << " <TreeType> <Size> <OutputCSV>\n";
+        .                  return 1;
+        .              }
+        .          
+        6  (0.0%)      string tree_type = argv[1];
+        7  (0.0%)      int N = stoi(argv[2]);
+        6  (0.0%)      string output_file = argv[3];
+        .          
+        2  (0.0%)      srand(42);
+        .              vector<int> data(N);
+        .              iota(data.begin(), data.end(), 0);
+        4  (0.0%)      shuffle(data.begin(), data.end(), default_random_engine(42));
+        .          
+       10  (0.0%)      vector<int> update_data(data.begin(), data.begin() + N * 60 / 100);
+        9  (0.0%)      vector<int> delete_data(data.begin(), data.begin() + N * 10 / 100);
+        9  (0.0%)      vector<int> pred_succ_data(data.begin(), data.begin() + N * 5 / 100);
+        .          
+        8  (0.0%)      OperationStats stats = benchmark_tree(tree_type, data, update_data, delete_data, pred_succ_data);
+        .          
+        .              // Always run benchmarks, only suppress writing
+        4  (0.0%)      if (getenv("DISABLE_CSV_WRITE") == nullptr)
+        .              {
+        .                  ofstream out(output_file, ios::app);
+        .                  if (!out)
+        .                  {
+        .                      cerr << "Failed to open " << output_file << endl;
+        .                      return 1;
+        .                  }
+        .          
+-- line 712 ----------------------------------------
+-- line 715 ----------------------------------------
+        .          
+        .                  out << tree_type << "," << N << ","
+        .                      << stats.insert_time << "," << stats.search_time << ","
+        .                      << stats.update_time << "," << stats.delete_time << ","
+        .                      << stats.pred_time << "," << stats.succ_time << ","
+        .                      << peak_allocated_bytes << "," << get_peak_rss_kb() << "\n";
+        .              }
+        .          
+        2  (0.0%)      report_memory_usage();
+        .          
+        1  (0.0%)      return 0;
+       21  (0.0%)  }
+        .          
+
+--------------------------------------------------------------------------------
+-- Annotated source file: /usr/include/c++/13/bits/move.h
+--------------------------------------------------------------------------------
+Ir___________ 
+
+-- line 189 ----------------------------------------
+     .             swap(_Tp& __a, _Tp& __b)
+     .             _GLIBCXX_NOEXCEPT_IF(__and_<is_nothrow_move_constructible<_Tp>,
+     .         				is_nothrow_move_assignable<_Tp>>::value)
+     .             {
+     .         #if __cplusplus < 201103L
+     .               // concept requirements
+     .               __glibcxx_function_requires(_SGIAssignableConcept<_Tp>)
+     .         #endif
+14,998 (0.1%)        _Tp __tmp = _GLIBCXX_MOVE(__a);
+19,998 (0.1%)        __a = _GLIBCXX_MOVE(__b);
+10,000 (0.1%)        __b = _GLIBCXX_MOVE(__tmp);
+     .             }
+     .         
+     .           // _GLIBCXX_RESOLVE_LIB_DEFECTS
+     .           // DR 809. std::swap should be overloaded for array types.
+     .           /// Swap the contents of two arrays.
+     .           template<typename _Tp, size_t _Nm>
+     .             _GLIBCXX20_CONSTEXPR
+     .             inline
+-- line 207 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Annotated source file: /usr/include/c++/13/bits/random.h
+--------------------------------------------------------------------------------
+Ir___________ 
+
+-- line 133 ----------------------------------------
+     .             // - for m == 2^n or m == 0, unsigned integer overflow is safe.
+     .             // - a * (m - 1) + c fits in _Tp, there is no overflow.
+     .             template<typename _Tp, _Tp __m, _Tp __a, _Tp __c, bool __s>
+     .               struct _Mod<_Tp, __m, __a, __c, true, __s>
+     .               {
+     .         	static _Tp
+     .         	__calc(_Tp __x)
+     .         	{
+ 5,038 (0.0%)  	  _Tp __res = __a * __x + __c;
+     .         	  if (__m)
+65,456 (0.4%)  	    __res %= __m;
+     .         	  return __res;
+     .         	}
+     .               };
+     .         
+     .             template<typename _Tp, _Tp __m, _Tp __a = 1, _Tp __c = 0>
+     .               inline _Tp
+     .               __mod(_Tp __x)
+     .               {
+-- line 151 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Annotated source file: /usr/include/c++/13/bits/stl_algo.h
+--------------------------------------------------------------------------------
+Ir___________ 
+
+-- line 3715 ----------------------------------------
+     .            *  invocation, and significantly reduce the waste.
+     .           */
+     .           template<typename _IntType, typename _UniformRandomBitGenerator>
+     .             pair<_IntType, _IntType>
+     .             __gen_two_uniform_ints(_IntType __b0, _IntType __b1,
+     .         			   _UniformRandomBitGenerator&& __g)
+     .             {
+     .               _IntType __x
+ 9,998 (0.1%)  	= uniform_int_distribution<_IntType>{0, (__b0 * __b1) - 1}(__g);
+     .               return std::make_pair(__x / __b1, __x % __b1);
+     .             }
+     .         
+     .           /**
+     .            *  @brief Shuffle the elements of a sequence using a uniform random
+     .            *         number generator.
+     .            *  @ingroup mutating_algorithms
+     .            *  @param  __first   A forward iterator.
+-- line 3731 ----------------------------------------
+-- line 3734 ----------------------------------------
+     .            *  @return  Nothing.
+     .            *
+     .            *  Reorders the elements in the range @p [__first,__last) using @p __g to
+     .            *  provide random numbers.
+     .           */
+     .           template<typename _RandomAccessIterator,
+     .         	   typename _UniformRandomNumberGenerator>
+     .             void
+     4 (0.0%)      shuffle(_RandomAccessIterator __first, _RandomAccessIterator __last,
+     .         	    _UniformRandomNumberGenerator&& __g)
+     .             {
+     .               // concept requirements
+     .               __glibcxx_function_requires(_Mutable_RandomAccessIteratorConcept<
+     .         	    _RandomAccessIterator>)
+     .               __glibcxx_requires_valid_range(__first, __last);
+     .         
+     2 (0.0%)        if (__first == __last)
+     .         	return;
+     .         
+     .               typedef typename iterator_traits<_RandomAccessIterator>::difference_type
+     .         	_DistanceType;
+     .         
+     .               typedef typename std::make_unsigned<_DistanceType>::type __ud_type;
+     .               typedef typename std::uniform_int_distribution<__ud_type> __distr_type;
+     .               typedef typename __distr_type::param_type __p_type;
+-- line 3758 ----------------------------------------
+-- line 3760 ----------------------------------------
+     .               typedef typename remove_reference<_UniformRandomNumberGenerator>::type
+     .         	_Gen;
+     .               typedef typename common_type<typename _Gen::result_type, __ud_type>::type
+     .         	__uc_type;
+     .         
+     .               const __uc_type __urngrange = __g.max() - __g.min();
+     .               const __uc_type __urange = __uc_type(__last - __first);
+     .         
+     7 (0.0%)        if (__urngrange / __urange >= __urange)
+     .                 // I.e. (__urngrange >= __urange * __urange) but without wrap issues.
+     .               {
+     .         	_RandomAccessIterator __i = __first + 1;
+     .         
+     .         	// Since we know the range isn't empty, an even number of elements
+     .         	// means an uneven number of elements /to swap/, in which case we
+     .         	// do the first one up front:
+     .         
+     2 (0.0%)  	if ((__urange % 2) == 0)
+     .         	{
+     .         	  __distr_type __d{0, 1};
+     .         	  std::iter_swap(__i++, __first + __d(__g));
+     .         	}
+     .         
+     .         	// Now we know that __last - __i is even, so we do the rest in pairs,
+     .         	// using a single distribution invocation to produce swap positions
+     .         	// for two successive elements at a time:
+     .         
+15,000 (0.1%)  	while (__i != __last)
+     .         	{
+ 4,999 (0.0%)  	  const __uc_type __swap_range = __uc_type(__i - __first) + 1;
+     .         
+     .         	  const pair<__uc_type, __uc_type> __pospos =
+ 4,999 (0.0%)  	    __gen_two_uniform_ints(__swap_range, __swap_range + 1, __g);
+     .         
+     .         	  std::iter_swap(__i++, __first + __pospos.first);
+     .         	  std::iter_swap(__i++, __first + __pospos.second);
+     .         	}
+     .         
+     .         	return;
+     .               }
+     .         
+     .               __distr_type __d;
+     .         
+     .               for (_RandomAccessIterator __i = __first + 1; __i != __last; ++__i)
+     .         	std::iter_swap(__i, __first + __d(__g, __p_type(0, __i - __first)));
+     4 (0.0%)      }
+     .         #endif // USE C99_STDINT
+     .         
+     .         #endif // C++11
+     .         
+     .         _GLIBCXX_BEGIN_NAMESPACE_ALGO
+     .         
+     .           /**
+     .            *  @brief Apply a function to every element of a sequence.
+-- line 3813 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Annotated source file: /usr/include/c++/13/bits/stl_algobase.h
+--------------------------------------------------------------------------------
+Ir____________ 
+
+-- line 254 ----------------------------------------
+      .           template<typename _Tp>
+      .             _GLIBCXX14_CONSTEXPR
+      .             inline const _Tp&
+      .             max(const _Tp& __a, const _Tp& __b)
+      .             {
+      .               // concept requirements
+      .               __glibcxx_function_requires(_LessThanComparableConcept<_Tp>)
+      .               //return  __a < __b ? __b : __a;
+838,885 (5.1%)        if (__a < __b)
+      .         	return __b;
+      .               return __a;
+      .             }
+      .         
+      .           /**
+      .            *  @brief This does what you think it does.
+      .            *  @ingroup sorting_algorithms
+      .            *  @param  __a  A thing of arbitrary type.
+-- line 270 ----------------------------------------
+-- line 428 ----------------------------------------
+      .             struct __copy_move<_IsMove, true, random_access_iterator_tag>
+      .             {
+      .               template<typename _Tp, typename _Up>
+      .         	_GLIBCXX20_CONSTEXPR
+      .         	static _Up*
+      .         	__copy_m(_Tp* __first, _Tp* __last, _Up* __result)
+      .         	{
+      .         	  const ptrdiff_t _Num = __last - __first;
+      6 (0.0%)  	  if (__builtin_expect(_Num > 1, true))
+      9 (0.0%)  	    __builtin_memmove(__result, __first, sizeof(_Tp) * _Num);
+      .         	  else if (_Num == 1)
+      .         	    std::__copy_move<_IsMove, false, random_access_iterator_tag>::
+      .         	      __assign_one(__result, __first);
+      .         	  return __result + _Num;
+      .         	}
+      .             };
+      .         
+      .         _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
+-- line 445 ----------------------------------------
+-- line 922 ----------------------------------------
+      .           template<typename _ForwardIterator, typename _Tp>
+      .             _GLIBCXX20_CONSTEXPR
+      .             inline typename
+      .             __gnu_cxx::__enable_if<__is_scalar<_Tp>::__value, void>::__type
+      .             __fill_a1(_ForwardIterator __first, _ForwardIterator __last,
+      .         	      const _Tp& __value)
+      .             {
+      .               const _Tp __tmp = __value;
+      2 (0.0%)        for (; __first != __last; ++__first)
+      5 (0.0%)  	*__first = __tmp;
+      .             }
+      .         
+      .           // Specialization: for char types we can use memset.
+      .           template<typename _Tp>
+      .             _GLIBCXX20_CONSTEXPR
+      .             inline typename
+      .             __gnu_cxx::__enable_if<__is_byte<_Tp>::__value, void>::__type
+      .             __fill_a1(_Tp* __first, _Tp* __last, const _Tp& __c)
+-- line 939 ----------------------------------------
+-- line 1115 ----------------------------------------
+      .             _GLIBCXX20_CONSTEXPR
+      .             inline _OutputIterator
+      .             __fill_n_a(_OutputIterator __first, _Size __n, const _Tp& __value,
+      .         	       std::random_access_iterator_tag)
+      .             {
+      .         #if __cplusplus >= 201103L
+      .               static_assert(is_integral<_Size>{}, "fill_n must pass integral size");
+      .         #endif
+      2 (0.0%)        if (__n <= 0)
+      .         	return __first;
+      .         
+      .               __glibcxx_requires_can_increment(__first, __n);
+      .         
+      .               std::__fill_a(__first, __first + __n, __value);
+      .               return __first + __n;
+      .             }
+      .         
+-- line 1131 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Annotated source file: /usr/include/c++/13/bits/stl_iterator.h
+--------------------------------------------------------------------------------
+Ir___________ 
+
+-- line 1069 ----------------------------------------
+     .               using iterator_concept = std::__detail::__iter_concept<_Iterator>;
+     .         #endif
+     .         
+     .               _GLIBCXX_CONSTEXPR __normal_iterator() _GLIBCXX_NOEXCEPT
+     .               : _M_current(_Iterator()) { }
+     .         
+     .               explicit _GLIBCXX20_CONSTEXPR
+     .               __normal_iterator(const _Iterator& __i) _GLIBCXX_NOEXCEPT
+     6 (0.0%)        : _M_current(__i) { }
+     .         
+     .               // Allow iterator to const_iterator conversion
+     .         #if __cplusplus >= 201103L
+     .               template<typename _Iter, typename = __convertible_from<_Iter>>
+     .         	_GLIBCXX20_CONSTEXPR
+     .         	__normal_iterator(const __normal_iterator<_Iter, _Container>& __i)
+     .         	noexcept
+     .         #else
+-- line 1085 ----------------------------------------
+-- line 1110 ----------------------------------------
+     .               {
+     .         	++_M_current;
+     .         	return *this;
+     .               }
+     .         
+     .               _GLIBCXX20_CONSTEXPR
+     .               __normal_iterator
+     .               operator++(int) _GLIBCXX_NOEXCEPT
+     1 (0.0%)        { return __normal_iterator(_M_current++); }
+     .         
+     .               // Bidirectional iterator requirements
+     .               _GLIBCXX20_CONSTEXPR
+     .               __normal_iterator&
+     .               operator--() _GLIBCXX_NOEXCEPT
+     .               {
+     .         	--_M_current;
+     .         	return *this;
+-- line 1126 ----------------------------------------
+-- line 1140 ----------------------------------------
+     .               _GLIBCXX20_CONSTEXPR
+     .               __normal_iterator&
+     .               operator+=(difference_type __n) _GLIBCXX_NOEXCEPT
+     .               { _M_current += __n; return *this; }
+     .         
+     .               _GLIBCXX20_CONSTEXPR
+     .               __normal_iterator
+     .               operator+(difference_type __n) const _GLIBCXX_NOEXCEPT
+10,007 (0.1%)        { return __normal_iterator(_M_current + __n); }
+     .         
+     .               _GLIBCXX20_CONSTEXPR
+     .               __normal_iterator&
+     .               operator-=(difference_type __n) _GLIBCXX_NOEXCEPT
+     .               { _M_current -= __n; return *this; }
+     .         
+     .               _GLIBCXX20_CONSTEXPR
+     .               __normal_iterator
+-- line 1156 ----------------------------------------
+-- line 1329 ----------------------------------------
+     .             { return __lhs.base() - __rhs.base(); }
+     .         
+     .           template<typename _Iterator, typename _Container>
+     .             _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
+     .             inline typename __normal_iterator<_Iterator, _Container>::difference_type
+     .             operator-(const __normal_iterator<_Iterator, _Container>& __lhs,
+     .         	      const __normal_iterator<_Iterator, _Container>& __rhs)
+     .             _GLIBCXX_NOEXCEPT
+15,004 (0.1%)      { return __lhs.base() - __rhs.base(); }
+     .         
+     .           template<typename _Iterator, typename _Container>
+     .             _GLIBCXX_NODISCARD _GLIBCXX20_CONSTEXPR
+     .             inline __normal_iterator<_Iterator, _Container>
+     .             operator+(typename __normal_iterator<_Iterator, _Container>::difference_type
+     .         	      __n, const __normal_iterator<_Iterator, _Container>& __i)
+     .             _GLIBCXX_NOEXCEPT
+     .             { return __normal_iterator<_Iterator, _Container>(__i.base() + __n); }
+-- line 1345 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Annotated source file: /usr/include/c++/13/bits/stl_numeric.h
+--------------------------------------------------------------------------------
+Ir___________ 
+
+-- line 89 ----------------------------------------
+     .             {
+     .               // concept requirements
+     .               __glibcxx_function_requires(_Mutable_ForwardIteratorConcept<
+     .         				  _ForwardIterator>)
+     .               __glibcxx_function_requires(_ConvertibleConcept<_Tp,
+     .         	    typename iterator_traits<_ForwardIterator>::value_type>)
+     .               __glibcxx_requires_valid_range(__first, __last);
+     .         
+40,008 (0.2%)        for (; __first != __last; ++__first)
+     .         	{
+10,000 (0.1%)  	  *__first = __value;
+     .         	  ++__value;
+     .         	}
+     .             }
+     .         #endif
+     .         
+     .         _GLIBCXX_END_NAMESPACE_VERSION
+     .         
+     .         _GLIBCXX_BEGIN_NAMESPACE_ALGO
+-- line 107 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Annotated source file: /usr/include/c++/13/bits/uniform_int_dist.h
+--------------------------------------------------------------------------------
+Ir___________ 
+
+-- line 196 ----------------------------------------
+     .               { return this->b(); }
+     .         
+     .               /**
+     .                * @brief Generating functions.
+     .                */
+     .               template<typename _UniformRandomBitGenerator>
+     .         	result_type
+     .         	operator()(_UniformRandomBitGenerator& __urng)
+20,000 (0.1%)          { return this->operator()(__urng, _M_param); }
+     .         
+     .               template<typename _UniformRandomBitGenerator>
+     .         	result_type
+     .         	operator()(_UniformRandomBitGenerator& __urng,
+     .         		   const param_type& __p);
+     .         
+     .               template<typename _ForwardIterator,
+     .         	       typename _UniformRandomBitGenerator>
+-- line 212 ----------------------------------------
+-- line 279 ----------------------------------------
+     .         	    }
+     .         	  return __product >> _Up_traits::__digits;
+     .         	}
+     .             };
+     .         
+     .           template<typename _IntType>
+     .             template<typename _UniformRandomBitGenerator>
+     .               typename uniform_int_distribution<_IntType>::result_type
+35,000 (0.2%)        uniform_int_distribution<_IntType>::
+     .               operator()(_UniformRandomBitGenerator& __urng,
+     .         		 const param_type& __param)
+     .               {
+     .         	typedef typename _UniformRandomBitGenerator::result_type _Gresult_type;
+     .         	typedef typename make_unsigned<result_type>::type __utype;
+     .         	typedef typename common_type<_Gresult_type, __utype>::type __uctype;
+     .         
+     .         	constexpr __uctype __urngmin = _UniformRandomBitGenerator::min();
+     .         	constexpr __uctype __urngmax = _UniformRandomBitGenerator::max();
+     .         	static_assert( __urngmin < __urngmax,
+     .         	    "Uniform random bit generator must define min() < max()");
+     .         	constexpr __uctype __urngrange = __urngmax - __urngmin;
+     .         
+10,000 (0.1%)  	const __uctype __urange
+     .         	  = __uctype(__param.b()) - __uctype(__param.a());
+     .         
+     .         	__uctype __ret;
+10,000 (0.1%)  	if (__urngrange > __urange)
+     .         	  {
+     .         	    // downscaling
+     .         
+ 5,000 (0.0%)  	    const __uctype __uerange = __urange + 1; // __urange can be zero
+     .         
+     .         #if defined __UINT64_TYPE__ && defined __UINT32_TYPE__
+     .         #if __SIZEOF_INT128__
+     .         	    if _GLIBCXX17_CONSTEXPR (__urngrange == __UINT64_MAX__)
+     .         	      {
+     .         		// __urng produces values that use exactly 64-bits,
+     .         		// so use 128-bit integers to downscale to desired range.
+     .         		__UINT64_TYPE__ __u64erange = __uerange;
+-- line 317 ----------------------------------------
+-- line 326 ----------------------------------------
+     .         		// so use 64-bit integers to downscale to desired range.
+     .         		__UINT32_TYPE__ __u32erange = __uerange;
+     .         		__ret = _S_nd<__UINT64_TYPE__>(__urng, __u32erange);
+     .         	      }
+     .         	    else
+     .         #endif
+     .         	      {
+     .         		// fallback case (2 divisions)
+25,000 (0.2%)  		const __uctype __scaling = __urngrange / __uerange;
+ 5,000 (0.0%)  		const __uctype __past = __uerange * __scaling;
+     .         		do
+ 5,038 (0.0%)  		  __ret = __uctype(__urng()) - __urngmin;
+10,076 (0.1%)  		while (__ret >= __past);
+15,000 (0.1%)  		__ret /= __scaling;
+     .         	      }
+     .         	  }
+     .         	else if (__urngrange < __urange)
+     .         	  {
+     .         	    // upscaling
+     .         	    /*
+     .         	      Note that every value in [0, urange]
+     .         	      can be written uniquely as
+-- line 347 ----------------------------------------
+-- line 364 ----------------------------------------
+     .         			 (__urng, param_type(0, __urange / __uerngrange)));
+     .         		__ret = __tmp + (__uctype(__urng()) - __urngmin);
+     .         	      }
+     .         	    while (__ret > __urange || __ret < __tmp);
+     .         	  }
+     .         	else
+     .         	  __ret = __uctype(__urng()) - __urngmin;
+     .         
+ 5,000 (0.0%)  	return __ret + __param.a();
+30,000 (0.2%)        }
+     .         
+     .         
+     .           template<typename _IntType>
+     .             template<typename _ForwardIterator,
+     .         	     typename _UniformRandomBitGenerator>
+     .               void
+     .               uniform_int_distribution<_IntType>::
+     .               __generate_impl(_ForwardIterator __f, _ForwardIterator __t,
+-- line 381 ----------------------------------------
+
+--------------------------------------------------------------------------------
+-- Annotation summary
+--------------------------------------------------------------------------------
+Ir________________ 
+
+11,151,995 (68.4%)    annotated: files known & above threshold & readable, line numbers known
+         0            annotated: files known & above threshold & readable, line numbers unknown
+         0          unannotated: files known & above threshold & two or more non-identical
+ 4,922,264 (30.2%)  unannotated: files known & above threshold & unreadable 
+   124,727  (0.8%)  unannotated: files known & below threshold
+   104,542  (0.6%)  unannotated: files unknown
+

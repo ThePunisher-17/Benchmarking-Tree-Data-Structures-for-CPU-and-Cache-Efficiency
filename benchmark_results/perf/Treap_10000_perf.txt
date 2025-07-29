@@ -1,0 +1,32 @@
+# started on Sun Jul  6 14:36:28 2025
+
+
+ Performance counter stats for './benchmark Treap 10000 benchmark_results/csv/Treap_results.csv':
+
+              4.23 msec task-clock                       #    0.884 CPUs utilized             
+                 3      context-switches                 #  708.852 /sec                      
+                 2      cpu-migrations                   #  472.568 /sec                      
+               226      page-faults                      #   53.400 K/sec                     
+        13,185,289      cpu_atom/cycles/                 #    3.115 GHz                         (5.38%)
+        18,384,984      cpu_core/cycles/                 #    4.344 GHz                         (68.58%)
+        17,229,774      cpu_atom/instructions/           #    1.31  insn per cycle              (28.25%)
+        17,648,691      cpu_core/instructions/           #    0.96  insn per cycle              (68.58%)
+         3,219,697      cpu_atom/branches/               #  760.763 M/sec                       (31.42%)
+         4,112,478      cpu_core/branches/               #  971.713 M/sec                       (68.58%)
+           124,646      cpu_atom/branch-misses/          #    3.87% of all branches             (31.42%)
+           370,782      cpu_core/branch-misses/          #    9.02% of all branches             (68.58%)
+             TopdownL1 (cpu_core)                 #     11.7 %  tma_backend_bound      
+                                                  #     30.5 %  tma_bad_speculation    
+                                                  #     42.5 %  tma_frontend_bound     
+                                                  #     15.2 %  tma_retiring             (68.58%)
+             TopdownL1 (cpu_atom)                 #     24.5 %  tma_bad_speculation    
+                                                  #     29.1 %  tma_retiring             (31.42%)
+                                                  #     23.3 %  tma_backend_bound      
+                                                  #     23.1 %  tma_frontend_bound       (31.42%)
+
+       0.004786013 seconds time elapsed
+
+       0.003826000 seconds user
+       0.000956000 seconds sys
+
+

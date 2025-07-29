@@ -1,0 +1,7 @@
+==13322== Cachegrind, a high-precision tracing profiler
+==13322== Copyright (C) 2002-2017, and GNU GPL'd, by Nicholas Nethercote et al.
+==13322== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==13322== Command: ./benchmark BST 25000 benchmark_results/csv/BST_results.csv
+==13322== 
+==13322== 
+==13322== I refs:        30,329,554
